@@ -5,7 +5,7 @@ if (!lang) {
 }
 
 $(function () {
-    
+
 });
 
 $('.popover-dismiss').popover({
@@ -17,8 +17,8 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
 
     $("#main_header").html(data.main_header_text[lang]);
     $("#projects_header").html(data.projects_header_text[lang]);
-    $("#collection_header").html(data.collection_header_text[lang]);
-    $("#collection_sub_header").html(data.collection_sub_header_text[lang]);
+    $("#collection_header").html('<span style="background-color: #b3b3b3; color: black;">' + data.collection_header_text[lang] + '</span>');
+    $("#collection_sub_header").html('<span style="background-color: #b3b3b3; color: black;">' + data.collection_sub_header_text[lang] + '</span>');
     $("#changeLanguageButton").html(data.lang_verbose[lang]);
 
     $("#vue_img").attr({ "data-content": data.vue_popover_content_text[lang], "data-title": data.confident[lang] });
