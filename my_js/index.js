@@ -4,4 +4,10 @@ if (!lang) {
     window.localStorage.setItem("lang", "de");
 }
 
-//document.getElementById("main_header").innerHTML = 
+const jsonXHR = $.getJSON("./all_texts.json", function (data) {
+
+
+    $("#main_header").html(data.main_header_text[lang]);
+});
+
+console.log(jsonXHR);
