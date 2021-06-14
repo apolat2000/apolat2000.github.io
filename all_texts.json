@@ -33,5 +33,12 @@
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
         "la": "Hanc expandere placet."
+    },
+    "vue_popover_content_text": {
+        "en": "I like expanding it.",
+        "de": "Ich mag's, es zu erweitern.",
+        "it": "Mi piace espanderla.",
+        "tr": "Koleksiyonumu büyütmeyi severim.",
+        "la": "Hanc expandere placet."
     }
 }

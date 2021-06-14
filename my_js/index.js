@@ -20,6 +20,8 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
     $("#collection_header").html(data.collection_header_text[lang]);
     $("#collection_sub_header").html(data.collection_sub_header_text[lang]);
     $("#changeLanguageButton").html(data.lang_verbose[lang]);
+    $("#vue_img").data("content", data.vue_popover_content_text[lang]);
+    console.log($("#vue_img").data());
 });
 
 console.log(jsonXHR);
