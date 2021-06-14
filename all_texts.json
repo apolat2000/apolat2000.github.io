@@ -1,9 +1,37 @@
 {
+    "lang_verbose": {
+        "en": "English",
+        "de": "Deutsch",
+        "it": "Italiano",
+        "tr": "Türkçe",
+        "la": "Latina"
+    },
     "main_header_text": {
         "en": "Hi! Your interest makes me happy.",
         "de": "Hey! Deine Interesse freut mich sehr.",
         "it": "Ciao! Il tuo interesse mi rende felice.",
         "tr": "Merhaba! İlgilendiğini görmek çok sevindirici.",
         "la": "Salve! Tantum gaudium est me tibi interesse."
+    },
+    "projects_header_text": {
+        "en": "My Projects",
+        "de": "Meine Projekte",
+        "it": "I Miei Progetti",
+        "tr": "Projelerim",
+        "la": "Proiecti Mei"
+    },
+    "collection_header_text": {
+        "en": "My Collection",
+        "de": "Meine Sammlung",
+        "it": "Mia Raccolta",
+        "tr": "Koleksiyonum",
+        "la": "Collectio Mea"
+    },
+    "collection_sub_header_text": {
+        "en": "I like expanding it.",
+        "de": "Ich mag's, es zu erweitern.",
+        "it": "Mi piace espanderla.",
+        "tr": "Koleksiyonumu büyütmeyi severim.",
+        "la": "Hanc expandere placet."
     }
 }

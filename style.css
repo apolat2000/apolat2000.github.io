@@ -1447,6 +1447,12 @@ form input[type="submit"], form button, form input[type="reset"] {
   align-items: center;
 }
 
+.change-language {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
 .section-title {
   font-size: 36px;
   font-size: 2.5714285714em;
