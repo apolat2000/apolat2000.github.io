@@ -4,8 +4,12 @@ if (!lang) {
     window.localStorage.setItem("lang", "de");
 }
 
-$(function() {
-    
+$(function () {
+    $('[data-toggle="popover"]').popover()
+});
+
+$('.popover-dismiss').popover({
+    trigger: 'focus'
 });
 
 const jsonXHR = $.getJSON("./all_texts.json", function (data) {
