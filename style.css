@@ -1419,7 +1419,33 @@ form input[type="submit"], form button, form input[type="reset"] {
 .fullwidth-block {
   padding: 50px 0; }
   .fullwidth-block.image-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 300px; }
+
+.badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.badge {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge-big {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .section-title {
   font-size: 36px;
@@ -1427,6 +1453,11 @@ form input[type="submit"], form button, form input[type="reset"] {
   letter-spacing: 2px;
   font-weight: 300;
   text-transform: uppercase; }
+
+.main-title {
+  font-size: 54px;
+  text-transform: uppercase;
+}
 
 .separator {
   border: none;
