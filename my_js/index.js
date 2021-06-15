@@ -14,11 +14,10 @@ $('.popover-dismiss').popover({
 
 const jsonXHR = $.getJSON("./all_texts.json", function (data) {
 
-
     $("#main_header").html(data.main_header_text[lang]);
     $("#projects_header").html(data.projects_header_text[lang]);
-    $("#collection_header").html('<span style="background-color: #b3b3b3; color: black;">' + data.collection_header_text[lang] + '</span>');
-    $("#collection_sub_header").html('<span style="background-color: #b3b3b3; color: black;">' + data.collection_sub_header_text[lang] + '</span>');
+    $("#collection_header").html(data.collection_header_text[lang]);
+    $("#collection_sub_header").html(data.collection_sub_header_text[lang]);
     $("#changeLanguageButton").html(data.lang_verbose[lang]);
 
     $("#vue_img").attr({ "data-content": data.vue_popover_content_text[lang], "data-title": data.confident[lang] });
@@ -35,14 +34,27 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
     $("#keras_img").attr({ "data-content": data.keras_popover_content_text[lang], "data-title": data.learning[lang] });
     $("#tensorflow_img").attr({ "data-content": data.tensorflow_popover_content_text[lang], "data-title": data.learning[lang] });
 
-
-
-
-
-    $('[data-toggle="popover"]').popover()
+    $('[data-toggle="popover"]').popover();
 });
 
 function changeLang(lan) {
     window.localStorage.setItem("lang", lan);
-    window.location.reload()
+    window.location.reload();
 }
+
+const inViewport = (entries, observer) => {
+    entries.forEach(entry => {
+        //entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+        entry.target.children[0].classList.toggle("is-inViewport", entry.isIntersecting);
+        console.log(entry.target.children[0]);
+    });
+};
+
+const Obs = new IntersectionObserver(inViewport);
+const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+// Attach observer to every [data-inviewport] element:
+const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+ELs_inViewport.forEach(EL => {
+    Obs.observe(EL, obsOptions);
+});
