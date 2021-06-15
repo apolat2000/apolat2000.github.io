@@ -1805,11 +1805,16 @@ form input[type="submit"], form button, form input[type="reset"] {
 .shelf-div {
   position: absolute;
   top: 0px;
+  width: 100%;
+}
+
+.regal-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   align-items: stretch;
+
 }
 
 .section-title {
