@@ -16,6 +16,8 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
 
     $("#main_header").html(data.main_header_text[lang]);
     $("#projects_header").html(data.projects_header_text[lang]);
+    $("#about_me_header").html(data.about_me_header_text[lang]);
+    $("#about_me_corpus").html(data.about_me_corpus_text[lang]);
     $("#collection_header").html(data.collection_header_text[lang]);
     $("#collection_sub_header").html(data.collection_sub_header_text[lang]);
     $("#changeLanguageButton").html(data.lang_verbose[lang]);

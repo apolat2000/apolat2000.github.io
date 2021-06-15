@@ -20,6 +20,20 @@
         "tr": "Projelerİm",
         "la": "Proiecti Mei"
     },
+    "about_me_header_text": {
+        "en": "Who i am",
+        "de": "Wer ich bin",
+        "it": "Chi sono io",
+        "tr": "Ben kİmİm",
+        "la": "Quis sim"
+    },
+    "about_me_corpus_text": {
+        "en": "Açıklama",
+        "de": "Açıklama",
+        "it": "Açıklama",
+        "tr": "Açıklama",
+        "la": "Açıklama"   
+    },
     "collection_header_text": {
         "en": "My Collection",
         "de": "Meine Sammlung",
