@@ -27,9 +27,17 @@
 
 
 <body>
-	<div style="position: static; width: 100%; height: min-content; text-align: center;">
-		<img style="width: 100%;" src="./images/bg_keller.jpg" alt="">
-		<h1 style="top: 100px; transform: translateY(-600px);" class="main-title"><span id="main_header" style="background-color: #b3b3b3; color: black;"></span></h1>
+	<div style="position: relative; width: 100%; height: min-content; text-align: center;">
+		<img style="max-width: 100%; width: auto; min-height: 500px;" src="./images/bg_keller.jpg" alt="">
+		<div
+			style="position: absolute; top: 25%; left: 50%; transform: translate(-50%,-25%); height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+			<h1 class="main-title">
+				<span id="main_header" style="background-color: #b3b3b3; color: black;"></span>
+			</h1>
+			<img src="./images/polat.png"
+				style="min-width: 100px; min-height: 100px; max-width: 200px; max-height: 200px;" alt="Hi, it's me!">
+			
+		</div>
 		<div class="change-language">
 			<div class="dropdown">
 				<button class="btn btn-outline-secondary dropdown-toggle text-white" type="button"
@@ -46,7 +54,7 @@
 		</div>
 	</div>
 
-		<!-- <div class="fullwidth-block image-block" style="text-align: center; min-height: 600px;"
+	<!-- <div class="fullwidth-block image-block" style="text-align: center; min-height: 600px;"
 		data-bg-image="./images/bg_keller.jpg">
 		<h1 class="main-title"><span id="main_header" style="background-color: #b3b3b3; color: black;"></span></h1>
 
@@ -67,278 +75,277 @@
 		</div>
 	</div> -->
 
-		<div>
-			<div class="fullwidth-block latest-projects-section">
-				<div class="container">
-					<h2 id="projects_header" class="section-title"></h2> <!-- My projects-->
-					<div class="row">
-						<div class="col-sm-6 col-md-3">
-							<div class="project">
-								<figure class="project-thumbnail"><img src="images/nka.png" width="270px;"
-										height="270px;" alt="Project 4"></figure>
-								<h3 class="project-title"><a href="#">Nachhilfekleinanzeigen</a></h3>
-								<small class="project-subtitle">Nonprofit enterprise</small>
-								<p>A platform for RWTH students, where they can meet each other by creating and joining
-									meeting rooms, with the aim of establishing more connectivity among students and
-									thus a more fruitful studying experience.</p>
-								<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
-							</div>
+	<div>
+		<div class="fullwidth-block latest-projects-section">
+			<div class="container">
+				<h2 id="projects_header" class="section-title"></h2> <!-- My projects-->
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="project">
+							<figure class="project-thumbnail"><img src="images/nka.png" width="270px;" height="270px;"
+									alt="Project 4"></figure>
+							<h3 class="project-title"><a href="#">Nachhilfekleinanzeigen</a></h3>
+							<small class="project-subtitle">Nonprofit enterprise</small>
+							<p>A platform for RWTH students, where they can meet each other by creating and joining
+								meeting rooms, with the aim of establishing more connectivity among students and
+								thus a more fruitful studying experience.</p>
+							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="project">
-								<figure class="project-thumbnail"><img src="images/sip.png" width="270px;"
-										height="270px;" alt="Project 3"></figure>
-								<h3 class="project-title"><a href="#">SIP</a></h3>
-								<small class="project-subtitle">Psychological experiment</small>
-								<p>Support children and young people in foster and adoptive families in coping
-									with previous traumatic experiences and to counteract the risk of future occurrence
-									of violence and bullying.</p>
-								<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
-							</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="project">
+							<figure class="project-thumbnail"><img src="images/sip.png" width="270px;" height="270px;"
+									alt="Project 3"></figure>
+							<h3 class="project-title"><a href="#">SIP</a></h3>
+							<small class="project-subtitle">Psychological experiment</small>
+							<p>Support children and young people in foster and adoptive families in coping
+								with previous traumatic experiences and to counteract the risk of future occurrence
+								of violence and bullying.</p>
+							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="project">
-								<figure class="project-thumbnail"><img src="images/pump.png" width="270px;"
-										height="270px;" alt="Project 1"></figure>
-								<h3 class="project-title"><a href="#">BART</a></h3>
-								<small class="project-subtitle">Psychological experiment</small>
-								<p>A gambling experiment for kids and teenagers. Measure how venturesome they are.</p>
-								<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
-							</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="project">
+							<figure class="project-thumbnail"><img src="images/pump.png" width="270px;" height="270px;"
+									alt="Project 1"></figure>
+							<h3 class="project-title"><a href="#">BART</a></h3>
+							<small class="project-subtitle">Psychological experiment</small>
+							<p>A gambling experiment for kids and teenagers. Measure how venturesome they are.</p>
+							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="project">
-								<figure class="project-thumbnail"><img src="images/verstaerken.jpg" width="270px;"
-										height="270px;" alt="Project 2"></figure>
-								<h3 class="project-title"><a href="#">Morphing</a></h3>
-								<small class="project-subtitle">Psychological experiment</small>
-								<p>Measure the emotion recognition capability of children and teenagers.</p>
-								<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
-							</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="project">
+							<figure class="project-thumbnail"><img src="images/verstaerken.jpg" width="270px;"
+									height="270px;" alt="Project 2"></figure>
+							<h3 class="project-title"><a href="#">Morphing</a></h3>
+							<small class="project-subtitle">Psychological experiment</small>
+							<p>Measure the emotion recognition capability of children and teenagers.</p>
+							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
+					</div>
 
-					</div> <!-- .row -->
-				</div> <!-- .container -->
-			</div> <!-- .fullwidth-block.latest-projects-section -->
+				</div> <!-- .row -->
+			</div> <!-- .container -->
+		</div> <!-- .fullwidth-block.latest-projects-section -->
 
-			<div class="fullwidth-block image-block" style="text-align: center;"
-				data-bg-image="images/boardgamecollection.jpg">
-				<a class="source"
-					href="https://www.reddit.com/r/oddlysatisfying/comments/ceb5wi/this_board_game_collection_a_friend_of_mine_has/"><span
-						style="background-color: #b3b3b3; color: black;">© Reddit, u/xyloben1</span></a>
-				<!--source: https://www.reddit.com/r/oddlysatisfying/comments/ceb5wi/this_board_game_collection_a_friend_of_mine_has/-->
-				<h1 class="main-title" style="margin-bottom: 0px;"><span id="collection_header"
-						style="background-color: #b3b3b3; color: black;"></span></h1> <!-- My collection -->
-				<h2><span id="collection_sub_header" style="background-color: #b3b3b3; color: black;"></span< /h2>
-						<!-- like expanding -->
-			</div>
+		<div class="fullwidth-block image-block" style="text-align: center;"
+			data-bg-image="images/boardgamecollection.jpg">
+			<a class="source"
+				href="https://www.reddit.com/r/oddlysatisfying/comments/ceb5wi/this_board_game_collection_a_friend_of_mine_has/"><span
+					style="background-color: #b3b3b3; color: black;">© Reddit, u/xyloben1</span></a>
+			<!--source: https://www.reddit.com/r/oddlysatisfying/comments/ceb5wi/this_board_game_collection_a_friend_of_mine_has/-->
+			<h1 class="main-title" style="margin-bottom: 0px;"><span id="collection_header"
+					style="background-color: #b3b3b3; color: black;"></span></h1> <!-- My collection -->
+			<h2><span id="collection_sub_header" style="background-color: #b3b3b3; color: black;"></span< /h2>
+					<!-- like expanding -->
+		</div>
 
-			<div style="position: relative; width: 80%; margin: auto;">
-				<!-- <div>
+		<div style="position: relative; width: 80%; margin: auto;">
+			<!-- <div>
 				<img style="height: 800px;" src="./images/shelf_left.png" alt="">
 				<img style="flex-grow: 1; flex-shrink: 1; min-width: 0; height: 800px;" src="./images/shelf_middle.png"
 					alt="">
 				<img style="height: 800px;" src="./images/shelf_right.png" alt="">
 			</div> -->
 
-				<div class="shelf-div">
+			<div class="shelf-div">
 
-					<div class="regal-div">
-						<img style="height: 126px;" src="./images/shelf/top_left.png" alt="">
-						<img style="flex-grow: 1; flex-shrink: 1; min-width: 0; height: 126px;"
-							src="./images/shelf/top_mid.png" alt="">
-						<img style="height: 126px;" src="./images/shelf/top_right.png" alt="">
-					</div>
-
-					<div class="regal-div">
-						<img style="height: 614px;" src="./images/shelf/mid_left.png" alt="">
-						<img style="flex-grow: 1; flex-shrink: 1; min-width: 0; height: 614px;"
-							src="./images/shelf/mid_mid.png" alt="">
-						<img style="height: 614px;" src="./images/shelf/mid_right.png" alt="">
-					</div>
-
-					<div class="regal-div">
-						<img style="height: 182px;" src="./images/shelf/bot_left.png" alt="">
-						<img style="flex-grow: 1; flex-shrink: 1; min-width: 0; height: 170px;"
-							src="./images/shelf/bot_mid.png" alt="">
-						<img style="height: 182px;" src="./images/shelf/bot_right.png" alt="">
-					</div>
-
-				</div>
-				<div class="badges">
-					<div style="margin-top: 80px;">
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="python_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/python_logo.png" alt="">
-
-						</div>
-						<p style="text-align: center;">Python</p>
-					</div>
-
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="node_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-content="Node content"
-								data-placement="bottom" src="./images/logos/node_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">Node.js</p>
-					</div>
-
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="vue_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/vue_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">Vue.js</p>
-					</div>
-
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="mongo_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/mongo_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">MongoDB</p>
-					</div>
-
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="linux_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/linux_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">Linux</p>
-					</div>
+				<div class="regal-div">
+					<img style="height: 126px;" src="./images/shelf/top_left.png" alt="">
+					<img style="flex-grow: 1; flex-shrink: 1; min-width: 0; height: 126px;"
+						src="./images/shelf/top_mid.png" alt="">
+					<img style="height: 126px;" src="./images/shelf/top_right.png" alt="">
 				</div>
 
-				<div style="margin-top: 15px;" class="badges">
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="pandas_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/pandas_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">pandas</p>
-
-					</div>
-
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="git_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/git_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">git</p>
-
-					</div>
-
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="css_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/css_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">CSS</p>
-
-					</div>
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="django_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/django_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">django</p>
-
-					</div>
-				</div>
-				<div style="margin-top: 20px;" class="badges">
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="html_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/html_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">HTML</p>
-
-					</div>
-
-					<div>
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-out" id="matlab_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/matlab_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">MATLAB</p>
-
-					</div>
-
-
+				<div class="regal-div">
+					<img style="height: 614px;" src="./images/shelf/mid_left.png" alt="">
+					<img style="flex-grow: 1; flex-shrink: 1; min-width: 0; height: 614px;"
+						src="./images/shelf/mid_mid.png" alt="">
+					<img style="height: 614px;" src="./images/shelf/mid_right.png" alt="">
 				</div>
 
-				<div style="margin-top: 20px; justify-content: center;" class="badges">
+				<div class="regal-div">
+					<img style="height: 182px;" src="./images/shelf/bot_left.png" alt="">
+					<img style="flex-grow: 1; flex-shrink: 1; min-width: 0; height: 170px;"
+						src="./images/shelf/bot_mid.png" alt="">
+					<img style="height: 182px;" src="./images/shelf/bot_right.png" alt="">
+				</div>
 
-					<div style="margin-right: 30px;">
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-in" id="keras_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/keras_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">Keras</p>
-
-					</div>
-
-					<div style="margin-left: 30px;">
-						<div data-inviewport class="badge-big">
-							<img class="badge-img" data-inviewporttype="scale-in" id="tensorflow_img" tabindex="0"
-								data-toggle="popover" data-trigger="focus" data-placement="bottom"
-								src="./images/logos/tensor_logo.png" alt="">
-						</div>
-						<p style="text-align: center;">TensorFlow</p>
+			</div>
+			<div class="badges">
+				<div style="margin-top: 80px;">
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="python_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/python_logo.png" alt="">
 
 					</div>
+					<p style="text-align: center;">Python</p>
+				</div>
+
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="node_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-content="Node content"
+							data-placement="bottom" src="./images/logos/node_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">Node.js</p>
+				</div>
+
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="vue_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/vue_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">Vue.js</p>
+				</div>
+
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="mongo_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/mongo_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">MongoDB</p>
+				</div>
+
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="linux_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/linux_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">Linux</p>
 				</div>
 			</div>
-		</div> <!-- .main-content -->
 
-		<footer class="site-footer">
-			<div class="container">
-				<div class="pull-left">
-
-					<div>Designed by <a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com"
-							target="_blank">VandelayDesign.com</a>. All rights
-						reserved. <br> Free Wordpress Themes by <a rel="nofollow"
-							href="http://www.themezy.com">Themezy</a>
+			<div style="margin-top: 15px;" class="badges">
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="pandas_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/pandas_logo.png" alt="">
 					</div>
+					<p style="text-align: center;">pandas</p>
 
 				</div>
-				<div class="pull-right">
 
-					<div class="social-links">
-
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
-
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="git_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/git_logo.png" alt="">
 					</div>
+					<p style="text-align: center;">git</p>
+
+				</div>
+
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="css_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/css_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">CSS</p>
+
+				</div>
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="django_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/django_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">django</p>
 
 				</div>
 			</div>
-		</footer>
+			<div style="margin-top: 20px;" class="badges">
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="html_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/html_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">HTML</p>
 
-		<script src="https://code.jquery.com/jquery-3.6.0.js"
-			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+				</div>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-			crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-			crossorigin="anonymous"></script>
-		<script src="./my_js/index.js"></script>
-		<script src="js/plugins.js"></script>
+				<div>
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-out" id="matlab_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/matlab_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">MATLAB</p>
+
+				</div>
+
+
+			</div>
+
+			<div style="margin-top: 20px; justify-content: center;" class="badges">
+
+				<div style="margin-right: 30px;">
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-in" id="keras_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/keras_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">Keras</p>
+
+				</div>
+
+				<div style="margin-left: 30px;">
+					<div data-inviewport class="badge-big">
+						<img class="badge-img" data-inviewporttype="scale-in" id="tensorflow_img" tabindex="0"
+							data-toggle="popover" data-trigger="focus" data-placement="bottom"
+							src="./images/logos/tensor_logo.png" alt="">
+					</div>
+					<p style="text-align: center;">TensorFlow</p>
+
+				</div>
+			</div>
+		</div>
+	</div> <!-- .main-content -->
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="pull-left">
+
+				<div>Designed by <a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com"
+						target="_blank">VandelayDesign.com</a>. All rights
+					reserved. <br> Free Wordpress Themes by <a rel="nofollow" href="http://www.themezy.com">Themezy</a>
+				</div>
+
+			</div>
+			<div class="pull-right">
+
+				<div class="social-links">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-pinterest"></i></a>
+
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="./my_js/index.js"></script>
+	<script src="js/plugins.js"></script>
 </body>
 
 </html>
