@@ -1828,6 +1828,7 @@ form input[type="submit"], form button, form input[type="reset"] {
 .main-title {
   font-size: 54px;
   text-transform: uppercase;
+  /* position: absolute; */
 }
 
 .separator {

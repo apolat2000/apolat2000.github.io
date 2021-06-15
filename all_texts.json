@@ -17,14 +17,14 @@
         "en": "My Projects",
         "de": "Meine Projekte",
         "it": "I Miei Progetti",
-        "tr": "Projelerim",
+        "tr": "Projelerİm",
         "la": "Proiecti Mei"
     },
     "collection_header_text": {
         "en": "My Collection",
         "de": "Meine Sammlung",
         "it": "Mia Raccolta",
-        "tr": "Koleksiyonum",
+        "tr": "Koleksİyonum",
         "la": "Collectio Mea"
     },
     "collection_sub_header_text": {
@@ -32,98 +32,98 @@
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "vue_popover_content_text": {
         "en": "I am using Vue for my website Nachhilfekleinanzeigen. I feel quite proficient and comfortable with it.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "python_popover_content_text": {
         "en": "I actively used Python for data processing purposes for my job at RWTH-Uniklinik. I am currently using it for developing recommender systems for my website Nachhilfekleinanzeigen.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "node_popover_content_text": {
         "en": "I am using Node.js for my website Nachhilfekleinanzeigen. I feel quite proficient and comfortable with it.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "mongo_popover_content_text": {
         "en": "I am using MongoDB for my website Nachhilfekleinanzeigen. I personally prefer NoSQL over SQL, particularly MongoDB, because it offers many other functionalities such as database queries. And i see NoSQL as a superset of SQL, which means it is SQL, but more than that.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "linux_popover_content_text": {
         "en": "I use Ubuntu as my main operating system, because it is particularly handy for server connections and development in general. It also helps me keep focused and prevents me from playing computer games.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "pandas_popover_content_text": {
         "en": "I actively used pandas for data processing purposes for my job at RWTH-Uniklinik.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "git_popover_content_text": {
         "en": "I actively use git for basically anything that i develop.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "css_popover_content_text": {
         "en": "I feel i have a generally satisfactory knowledge of CSS, since i've used it in numerous projects and actively use it.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "django_popover_content_text": {
         "en": "I actively used django for my job at RWTH-Uniklinik, where i helped record the data of the subjects in our database.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "html_popover_content_text": {
         "en": "I feel i have a generally satisfactory knowledge of HTML, since i've used it in numerous projects and actively use it.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "matlab_popover_content_text": {
         "en": "I actively used MATLAB for implementing psychological experiments and data processing for my job at RWTH-Uniklinik.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "keras_popover_content_text": {
         "en": "I am really looking forward to get a good grasp of deep learning, which will be useful for my project Nachhilfekleinanzeigen. I am currently particularly interested in building my first own recommender system.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "tensorflow_popover_content_text": {
         "en": "I am really looking forward to get a good grasp of deep learning, which will be useful for my project Nachhilfekleinanzeigen. I am currently particularly interested in building my first own recommender system.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
-        "la": "Hanc expandere placet."
+        "la": "Hanc expansu placet."
     },
     "confident": {
         "en": "Confident",
