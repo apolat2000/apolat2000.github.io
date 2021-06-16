@@ -276,6 +276,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: normal;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1757,7 +1758,7 @@ form input[type="submit"], form button, form input[type="reset"] {
 }
 
 .fullwidth-block {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 .fullwidth-block.image-block {
@@ -1776,6 +1777,7 @@ form input[type="submit"], form button, form input[type="reset"] {
 }
 
 .shelf-div {
+  display: block;
   position: absolute;
   top: 0px;
   width: 100%;
@@ -1827,11 +1829,19 @@ form input[type="submit"], form button, form input[type="reset"] {
   cursor: help;
   max-height: 100%;
   max-width: 120%;
+  overflow: hidden;
+}
+
+.site-footer {
+  margin-top: 350px;
 }
 
 @media (max-width: 1200px) {
   .badges {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .site-footer {
+    margin-top: 150px;
   }
 }
 
@@ -1852,6 +1862,9 @@ form input[type="submit"], form button, form input[type="reset"] {
   .shelf-outer {
     width: 90%;
   }
+  .site-footer {
+    margin-top: 510px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1861,6 +1874,9 @@ form input[type="submit"], form button, form input[type="reset"] {
   }
   .shelf-outer {
     width: 95%;
+  }
+  .site-footer {
+    margin-top: 150px;
   }
 }
 
@@ -2057,7 +2073,9 @@ form input[type="submit"], form button, form input[type="reset"] {
 }
 
 .page {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .page .align-left {
@@ -2314,10 +2332,6 @@ form input[type="submit"], form button, form input[type="reset"] {
 /*
  * Footer Styles
  */
-
-.site-footer {
-  margin-top: 50px;
-}
 
 .site-footer .container {
   border-top: 1px solid #383838;

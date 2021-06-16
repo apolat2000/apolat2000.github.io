@@ -40,7 +40,7 @@ var coverVid=function(a,b,c){function d(a,b){var c=null;return function(){var d=
 	});
 
 
-	$(window).load(function(){
+	$(window).on('load', function(){
 
 		/* Filterable Items */
 		var $container = $('.filterable-items');

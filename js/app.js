@@ -41,7 +41,7 @@
 	    }
 	});
 
-	$(window).load(function(){
+	$(window).on('load',function(){
 		var $container = $('.filterable-items');
 
 	    $container.isotope({
