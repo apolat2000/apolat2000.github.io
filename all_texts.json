@@ -70,7 +70,7 @@
         "la": "Hanc expansu placet."
     },
     "mongo_popover_content_text": {
-        "en": "I am using MongoDB for my website Nachhilfekleinanzeigen. I personally prefer NoSQL over SQL, particularly MongoDB, because it offers many other functionalities such as database queries. And i see NoSQL as a superset of SQL, which means it is SQL, but more than that.",
+        "en": "I am using MongoDB for my website Nachhilfekleinanzeigen. I personally prefer NoSQL over SQL, particularly MongoDB, because it offers many additional functionalities such as database queries. And i see NoSQL as a superset of SQL, which means it is SQL, but more than that.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",

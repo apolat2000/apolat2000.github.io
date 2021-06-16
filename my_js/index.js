@@ -49,7 +49,6 @@ const inViewport = (entries, observer) => {
     entries.forEach(entry => {
         //entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
         entry.target.children[0].classList.toggle("is-inViewport", entry.isIntersecting);
-        console.log(entry.target.children[0]);
     });
 };
 

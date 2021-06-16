@@ -1768,38 +1768,11 @@ form input[type="submit"], form button, form input[type="reset"] {
   min-height: 300px;
 }
 
-.badges {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-
-.badge {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.badge-img {
-  cursor: help;
-  height: 100%;
-}
-
-.badge-big {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.change-language {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+.shelf-outer {
+  position: relative;
+  height: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .shelf-div {
@@ -1814,7 +1787,82 @@ form input[type="submit"], form button, form input[type="reset"] {
   justify-content: space-between;
   width: 100%;
   align-items: stretch;
+}
 
+.extra-regal-div {
+  display: none;
+}
+
+.badge {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badges {
+  /* display: flex;
+  flex-direction: row; */
+  /* align-items: flex-end; */
+  /* justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: flex-end;
+  row-gap: 50px;
+}
+
+.badge-big {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge-img {
+  cursor: help;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .badges {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Rafta 3 badge */
+  .badges {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .extra-regal-div {
+    display: flex !important;
+  }
+  .badge-big {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .shelf-outer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Rafta 2 badge, biraz küçültülmüş */
+  .badges {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shelf-outer {
+    width: 95%;
+  }
+}
+
+.change-language {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .section-title {
