@@ -21,6 +21,7 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
     $("#collection_header").html(data.collection_header_text[lang]);
     $("#collection_sub_header").html(data.collection_sub_header_text[lang]);
     $("#changeLanguageButton").html(data.lang_verbose[lang]);
+    $("#coffee_text").html(data.coffee_text[lang]);
 
     $("#vue_img").attr({ "data-content": data.vue_popover_content_text[lang], "data-title": data.confident[lang] });
 

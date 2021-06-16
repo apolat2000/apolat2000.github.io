@@ -43,7 +43,7 @@
     },
     "collection_sub_header_text": {
         "en": "I like expanding it.",
-        "de": "Ich mag's, es zu erweitern.",
+        "de": "mag ich zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
         "la": "Hanc expansu placet."
@@ -166,5 +166,12 @@
         "it": "Abbastanza bene",
         "tr": "Yetkin",
         "la": "Satis sapientia"
+    },
+    "coffee_text": {
+        "en": "I'd like to get to know you. How about a coffee? Reach me via LinkedIn.",
+        "de": "Ich würde dich gerne kennenlernen. Wie klingt ein Kränzchen zusammen? Du kannst gerne per LinkedIn anschreiben.",
+        "it": "Sarebbe un piacere conoscerTi. Ti va un caffè? Scrivemi per LinkedIn.",
+        "tr": "Seninle tanışmak isterdim. Bir kahveye ne dersin? LinkedIn'den yazabilirsin.",
+        "la": "Te cognoscere vellem. Num tibi placeret bibere coffeam in convivio? Mihi per LinkedIn scribas."
     }
 }
