@@ -1811,6 +1811,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   justify-items: center;
   align-items: flex-end;
   row-gap: 50px;
+  padding-top: 80px;
 }
 
 .badge-big {
@@ -1819,11 +1820,13 @@ form input[type="submit"], form button, form input[type="reset"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .badge-img {
   cursor: help;
-  height: 100%;
+  max-height: 100%;
+  max-width: 120%;
 }
 
 @media (max-width: 1200px) {
@@ -1836,6 +1839,8 @@ form input[type="submit"], form button, form input[type="reset"] {
   /* Rafta 3 badge */
   .badges {
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+    padding-top: 110px;
   }
   .extra-regal-div {
     display: flex !important;
@@ -1877,6 +1882,12 @@ form input[type="submit"], form button, form input[type="reset"] {
   font-size: 3em;
   text-transform: uppercase;
   /* position: absolute; */
+}
+
+@media (max-width: 500px) {
+  .main-title {
+    font-size: 2em;
+  }
 }
 
 .separator {

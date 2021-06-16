@@ -32,6 +32,7 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
     $("#git_img").attr({ "data-content": data.git_popover_content_text[lang], "data-title": data.confident[lang] });
     $("#css_img").attr({ "data-content": data.css_popover_content_text[lang], "data-title": data.satisfactory[lang] });
     $("#django_img").attr({ "data-content": data.django_popover_content_text[lang], "data-title": data.satisfactory[lang] });
+    $("#php_img").attr({ "data-content": data.php_popover_content_text[lang], "data-title": data.satisfactory[lang] });
     $("#html_img").attr({ "data-content": data.html_popover_content_text[lang], "data-title": data.confident[lang] });
     $("#matlab_img").attr({ "data-content": data.matlab_popover_content_text[lang], "data-title": data.satisfactory[lang] });
     $("#keras_img").attr({ "data-content": data.keras_popover_content_text[lang], "data-title": data.learning[lang] });

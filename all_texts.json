@@ -28,7 +28,7 @@
         "la": "Quis sim"
     },
     "about_me_corpus_text": {
-        "en": "Açıklama",
+        "en": "I am Ahmet Polat, born on 18.11.2000 in Istanbul, an undergraduate at RWTH Aachen University,  Computer Science B. Sc.<br>I am a learning and building enthusiast. Particularly AI, Data Science, Full Stack Web Development and Product Management.<br>I am also a big nerd of board games, particularly pen and paper systems. My favourite two are GURPS and Burning Wheel. I developed my own complete pen and paper system over the years. If you are interested, i can tell you about it and send some props.<br>I worked at KJP institute of RWTH Uniklinik for one year, where my responsibilities were programming and maintenance of psychological experiments in MATLAB, data processing and placing HTTP requests with Python, and developing visual psychological experiments using HTML, Django, JavaScript and CSS. My work involved using git on a regular basis, using team communication programs and here and there, reading some papers on the field. What led me to the web development world was this job. It made me love it.<br>Then i took the \"Web Technologies\" lecture at the university and got a wider grasp of what web development means. Me and three friends developed a website for this course, which turned into my passion and i developed it once again all alone from scratch, and throught this, i learned full stack development. I am still working on this project, because i love it.<br>I loved my job a lot, but i decided to move along and discover novel things. I never want to have a small scope on the world, so to be honest, i am currently kind of a jack of all trades. I'd call myself \"versatile\", but i don't like to pretend to be presentable the whole time.<br>Another thing worth mentioning is my interest in learning new languages. I am an autodidact Latin speaker (yeah, literally speaker). I learned it by myself during highschool and at the end of the highschool, i tutored Latin learners online over the internet. After highschool, i wanted to finally visit Rome. So i thought to myself, \"hey, why not learn Italian so that you can actually talk a bit\". I learned it intensely for 2 weeks before my flight, and Italian turned out to be a really pleasant language, so i couldn't cease to learn it and currently i am visiting the B2 course at RWTH language center.",
         "de": "Açıklama",
         "it": "Açıklama",
         "tr": "Açıklama",
@@ -106,6 +106,13 @@
     },
     "django_popover_content_text": {
         "en": "I actively used django for my job at RWTH-Uniklinik, where i helped record the data of the subjects in our database.",
+        "de": "Ich mag's, es zu erweitern.",
+        "it": "Mi piace espanderla.",
+        "tr": "Koleksiyonumu büyütmeyi severim.",
+        "la": "Hanc expansu placet."
+    },
+    "php_popover_content_text": {
+        "en": "I am affiliated to php, since i help the development of the intern dormitory \"app\" ESGIntern of ESG Aachen. I have a general understanding of php. It would take me a lot of time to create a project from scratch, but if there is an existing project, i could contribute with ease.",
         "de": "Ich mag's, es zu erweitern.",
         "it": "Mi piace espanderla.",
         "tr": "Koleksiyonumu büyütmeyi severim.",
