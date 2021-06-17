@@ -1810,7 +1810,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   position: absolute;
   right: -20px;
   bottom: -20px;
-  animation: click 2s;
+  animation: click 5s;
   animation-fill-mode: forwards;
 }
 
@@ -1823,72 +1823,72 @@ form input[type="submit"], form button, form input[type="reset"] {
 #sparkle_1 {
   stroke-dasharray: 27;
   stroke-dashoffset: 27;
-  animation: click_sparkle 2s ease;
+  animation: click_sparkle 5s ease;
 }
 
 #sparkle_2 {
   stroke-dasharray: 27;
   stroke-dashoffset: 27;
-  animation: click_sparkle 2s ease;
+  animation: click_sparkle 5s ease;
 }
 
 #sparkle_3 {
   stroke-dasharray: 27;
   stroke-dashoffset: 27;
-  animation: click_sparkle 2s ease;
+  animation: click_sparkle 5s ease;
 }
 
 #sparkle_4 {
   stroke-dasharray: 27;
   stroke-dashoffset: 27;
-  animation: click_sparkle 2s ease;
+  animation: click_sparkle 5s ease;
 }
 
 #sparkle_5 {
   stroke-dasharray: 27;
   stroke-dashoffset: 27;
-  animation: click_sparkle 2s ease;
+  animation: click_sparkle 5s ease;
 }
 
 #sparkle_6 {
   stroke-dasharray: 27;
   stroke-dashoffset: 27;
-  animation: click_sparkle 2s;
+  animation: click_sparkle 5s;
 }
 
 @keyframes click_sparkle {
-  45% {
+  58% {
     stroke-dashoffset: 27;
   }
-  55% {
+  63% {
+    stroke-dashoffset: 0;
+  }
+  64% {
     stroke-dashoffset: 0;
   }
   65% {
-    stroke-dashoffset: 0;
-  }
-  66% {
     stroke-dashoffset: 27;
   }
 }
 
 @keyframes click {
-  from {
+  40% {
     right: -20px;
     bottom: -20px;
   }
-  40% {
+  56% {
     right: 0;
     bottom: 0;
   }
-  45% {
+  58% {
     right: 0;
     bottom: -5px;
   }
-  50% {
+  60% {
     right: 0;
     bottom: 0;
   }
-  to {
+  70% {
     right: -20px;
     bottom: -20px;
   }
