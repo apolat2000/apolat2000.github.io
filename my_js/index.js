@@ -54,6 +54,7 @@ const inViewport = (entries, observer) => {
                 $("#click_tip").css('display', 'flex');
                 $("body").css('overflow-y', 'hidden');
                 console.log('shown!');
+                Obs.unobserve(entry.target);
             }
         } else {
             entry.target.children[0].classList.toggle("is-inViewport", entry.isIntersecting);
@@ -75,5 +76,5 @@ ELs_inViewport.forEach(EL => {
 
 function closeClickTip() {
     $("#click_tip").remove();
-    $("body").css('overflow-y', 'auto');
+    $("body").css('overflow-y', 'scroll');
 }
