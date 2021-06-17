@@ -1810,8 +1810,8 @@ form input[type="submit"], form button, form input[type="reset"] {
   position: absolute;
   right: -20px;
   bottom: -20px;
-  animation: click 5s;
-  animation-fill-mode: forwards;
+  animation: click 5s  infinite;
+  /* animation-fill-mode: forwards; */
 }
 
 #click_sparkle {
