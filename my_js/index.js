@@ -52,6 +52,7 @@ const inViewport = (entries, observer) => {
         if (entry.target.id === "trigger_click_tip") {
             if (entry.intersectionRatio > 0) {
                 $("#click_tip").css('display', 'flex');
+                $("body").css('overflow-y', 'hidden');
                 console.log('shown!');
             }
         } else {
@@ -74,4 +75,5 @@ ELs_inViewport.forEach(EL => {
 
 function closeClickTip() {
     $("#click_tip").remove();
+    $("body").css('overflow-y', 'auto');
 }
