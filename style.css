@@ -1757,6 +1757,21 @@ form input[type="submit"], form button, form input[type="reset"] {
   background: url("images/next.png");
 }
 
+.click_tip_bg {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(0, 0, 0, 0.9);
+  z-index: 1000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .fullwidth-block {
   padding: 25px 0;
 }
@@ -1789,6 +1804,123 @@ form input[type="submit"], form button, form input[type="reset"] {
   justify-content: space-between;
   width: 100%;
   align-items: stretch;
+}
+
+#click_cursor {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  animation: click 2s;
+  animation-fill-mode: forwards;
+}
+
+#click_sparkle {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+}
+
+#sparkle_1 {
+  stroke-dasharray: 27;
+  stroke-dashoffset: 27;
+  animation: click_sparkle 2s ease;
+}
+
+#sparkle_2 {
+  stroke-dasharray: 27;
+  stroke-dashoffset: 27;
+  animation: click_sparkle 2s ease;
+}
+
+#sparkle_3 {
+  stroke-dasharray: 27;
+  stroke-dashoffset: 27;
+  animation: click_sparkle 2s ease;
+}
+
+#sparkle_4 {
+  stroke-dasharray: 27;
+  stroke-dashoffset: 27;
+  animation: click_sparkle 2s ease;
+}
+
+#sparkle_5 {
+  stroke-dasharray: 27;
+  stroke-dashoffset: 27;
+  animation: click_sparkle 2s ease;
+}
+
+#sparkle_6 {
+  stroke-dasharray: 27;
+  stroke-dashoffset: 27;
+  animation: click_sparkle 2s;
+}
+
+@keyframes click_sparkle {
+  45% {
+    stroke-dashoffset: 27;
+  }
+  55% {
+    stroke-dashoffset: 0;
+  }
+  65% {
+    stroke-dashoffset: 0;
+  }
+  66% {
+    stroke-dashoffset: 27;
+  }
+}
+
+@keyframes click {
+  from {
+    right: -20px;
+    bottom: -20px;
+  }
+  40% {
+    right: 0;
+    bottom: 0;
+  }
+  45% {
+    right: 0;
+    bottom: -5px;
+  }
+  50% {
+    right: 0;
+    bottom: 0;
+  }
+  to {
+    right: -20px;
+    bottom: -20px;
+  }
+}
+
+#arrow_body {
+  stroke-dasharray: 178;
+  stroke-dashoffset: 178;
+  animation: sign_arrow_body 1s ease;
+  animation-fill-mode: forwards;
+}
+
+#arrow_head {
+  stroke-dasharray: 145;
+  stroke-dashoffset: 145;
+  animation: sign_arrow_head 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sign_arrow_head {
+  50% {
+    stroke-dashoffset: 145;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes sign_arrow_body {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .extra-regal-div {
@@ -1827,9 +1959,15 @@ form input[type="submit"], form button, form input[type="reset"] {
 
 .badge-img {
   cursor: help;
-  max-height: 100%;
-  max-width: 120%;
   overflow: hidden;
+}
+
+.long {
+  max-width: 100%;
+}
+
+.tall {
+  max-height: 100%;
 }
 
 .site-footer {
@@ -1849,14 +1987,16 @@ form input[type="submit"], form button, form input[type="reset"] {
   /* Rafta 3 badge */
   .badges {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 80px;
-    padding-top: 110px;
+    row-gap: 53px;
+    padding-top: 75px;
   }
   .extra-regal-div {
     display: flex !important;
   }
-  .badge-big {
+  .long {
     width: 120px !important;
+  }
+  .tall {
     height: 120px !important;
   }
   .shelf-outer {

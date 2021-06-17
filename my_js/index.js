@@ -49,8 +49,17 @@ function changeLang(lan) {
 
 const inViewport = (entries, observer) => {
     entries.forEach(entry => {
-        //entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-        entry.target.children[0].classList.toggle("is-inViewport", entry.isIntersecting);
+        if (entry.target.id === "trigger_click_tip") {
+            if (entry.intersectionRatio > 0) {
+                $("#click_tip").css('display', 'flex');
+                console.log('shown!');
+            }
+        } else {
+            entry.target.children[0].classList.toggle("is-inViewport", entry.isIntersecting);
+            console.log('toggled');
+        }
+
+
     });
 };
 
@@ -62,3 +71,7 @@ const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
 ELs_inViewport.forEach(EL => {
     Obs.observe(EL, obsOptions);
 });
+
+function closeClickTip() {
+    $("#click_tip").remove();
+}
