@@ -1,13 +1,3 @@
-var lang = window.localStorage.getItem("lang");
-
-if (!lang) {
-    window.localStorage.setItem("lang", "de");
-}
-
-$(function () {
-
-});
-
 $('.popover-dismiss').popover({
     trigger: 'focus'
 });
