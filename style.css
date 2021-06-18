@@ -2555,3 +2555,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   bottom: -5px;
   right: -5px;
 }
+
+.modal-content {
+  background-color: #212121;
+}

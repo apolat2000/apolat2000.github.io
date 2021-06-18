@@ -48,6 +48,20 @@
         "tr": "Psikolojik Deney",
         "la": "Experimentum psychologicum"
     },
+    "cant_open_modal_p": {
+        "en": "I can't publish this experiment on my portfolio yet, because it is still being conducted.",
+        "de": "Ich darf das Experiment nicht auf meiner Webseite veröffentlichen, weil es immer noch im Betrieb ist.",
+        "it": "Non posso mettere l'esperimento sul mio portafoglio, perché é anchora in corso.",
+        "tr": "Deneyi henüz burada paylaşma iznim yok çünkü hala uygulanıyor.",
+        "la": "Mihi nondum licet edere experimentum, quod etiamnunc conducitur."
+    },
+    "cant_open_modal_header": {
+        "en": "Sorry",
+        "de": "Sorry",
+        "it": "Scuza",
+        "tr": "Üzgünüm",
+        "la": "Peto veniam"
+    },
     "nka_summary": {
         "en": "A platform for RWTH students, where they can meet each other by creating and joining meeting rooms, with the aim of establishing more connectivity among students and thus a more fruitful studying experience.",
         "de": "Eine Platform für RWTH-Studierende, wo sie andere Studierende treffen können, indem sie Meetingsräume erstellen oder beitreten, mit dem Ziel, mehr Verbindung und Kommunikation zwischen Studierenden für eine erfolgreiche und spannende Studiumserfahrung zu schaffen.",

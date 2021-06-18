@@ -16,6 +16,9 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
     $('#non_profit').html(data.non_profit_enterprise_text[lang]);
     $('.psych_exp').html(data.psychological_experiment_text[lang]);
 
+    $('#cantOpenModalHeader').html(data.cant_open_modal_header[lang]);
+    $('#cantOpenModalP').html(data.cant_open_modal_p[lang]);
+
     $('#nka_summary').html(data.nka_summary[lang]);
     $('#sip_summary').html(data.sip_summary[lang]);
     $('#bart_summary').html(data.bart_summary[lang]);
@@ -77,4 +80,8 @@ ELs_inViewport.forEach(EL => {
 function closeClickTip() {
     $("#click_tip").remove();
     $("body").css('overflow-y', 'scroll');
+}
+
+function cantOpen(exp) {
+    $('#cantOpenModal').modal();
 }
