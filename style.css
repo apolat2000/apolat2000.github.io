@@ -1795,11 +1795,15 @@ form input[type="submit"], form button, form input[type="reset"] {
   align-items: stretch;
 }
 
+.regal-img {
+  pointer-events: none;
+}
+
 #click_cursor {
   position: absolute;
   right: -20px;
   bottom: -20px;
-  animation: click 2.5s  infinite;
+  animation: click 2.5s infinite;
   /* animation-fill-mode: forwards; */
 }
 
