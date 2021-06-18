@@ -93,7 +93,8 @@
 					<a class="dropdown-item text-white" href="#" onclick="changeLang('la')">Latina</a>
 				</div>
 			</div>
-			<a style="margin-top: 1rem;" href="https://www.linkedin.com/in/ahmet-polat-profile/"><img style="height: 2rem;" src="./images/lin_logo.png" alt="LinkedIn"></a>
+			<a style="margin-top: 1rem;" href="https://www.linkedin.com/in/ahmet-polat-profile/"><img
+					style="height: 2rem;" src="./images/lin_logo.png" alt="LinkedIn"></a>
 		</div>
 		<img src="./images/polat.png"
 			style="position: absolute; bottom: 0%; right: 5%; transform: translate(5%, calc(-0% + 100px)); min-width: 100px; min-height: 100px; max-width: 200px; max-height: 200px;"
@@ -138,7 +139,7 @@
 							<figure class="project-thumbnail"><img src="images/nka.png" width="270px;" height="270px;"
 									alt="Project 4"></figure>
 							<h3 class="project-title"><a href="#">Nachhilfekleinanzeigen</a></h3>
-							<small class="project-subtitle psych_exp"></small>
+							<small id="non_profit" class="project-subtitle"></small>
 							<p id="nka_summary"></p>
 							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
@@ -150,7 +151,25 @@
 							<h3 class="project-title"><a href="#">SIP</a></h3>
 							<small class="project-subtitle psych_exp"></small>
 							<p id="sip_summary"></p>
-							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
+							<!-- <a href="./experiments/SIP/" class="more-link"><img src="images/arrow.png" alt=""></a> -->
+							<img style="cursor: pointer;" src="images/arrow.png" alt="" onclick="cantOpen('sip')"></a>
+						</div>
+					</div>
+					<div class="modal fade" id="cantOpenModal" tabindex="-1" role="dialog"
+						aria-labelledby="cantOpenModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h3 class="modal-title" id="cantOpenModalHeader">Modal title</h3>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body"><p id="cantOpenModalP"></p></div>
+								<div class="modal-footer">
+									<button type="button" data-dismiss="modal" class="btn btn-primary">OK</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3">
@@ -160,7 +179,8 @@
 							<h3 class="project-title"><a href="#">BART</a></h3>
 							<small class="project-subtitle psych_exp"></small>
 							<p id="bart_summary"></p>
-							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
+							<img style="cursor: pointer;" src="images/arrow.png" alt="" onclick="cantOpen('bart')"></a>
+							<!-- <a href="./experiments/BART/" class="more-link"><img src="images/arrow.png" alt=""></a> -->
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3">
@@ -170,7 +190,8 @@
 							<h3 class="project-title"><a href="#">Morphing</a></h3>
 							<small class="project-subtitle psych_exp"></small>
 							<p id="morphing_summary"></p>
-							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
+							<img style="cursor: pointer;" src="images/arrow.png" alt="" onclick="cantOpen('morphing')"></a>
+							<!-- <a href="./experiments/Morphing/" class="more-link"><img src="images/arrow.png" alt=""></a> -->
 						</div>
 					</div>
 
@@ -326,10 +347,12 @@
 
 	<footer class="site-footer">
 		<div class="container" style="text-align: center;">
-			<h1 id="coffee_text" style="text-align: center;">I'd like to get to know you. How about a coffee? Reach me via
+			<h1 id="coffee_text" style="text-align: center;">I'd like to get to know you. How about a coffee? Reach me
+				via
 				LinkedIn.</h1>
-				<h1 style="text-align: center;">&#x2615 &#x1F950</h1>
-			<a href="https://www.linkedin.com/in/ahmet-polat-profile/"><img style="height: 2rem;" src="./images/lin_logo.png" alt="LinkedIn"></a>
+			<h1 style="text-align: center;">&#x2615 &#x1F950</h1>
+			<a href="https://www.linkedin.com/in/ahmet-polat-profile/"><img style="height: 2rem;"
+					src="./images/lin_logo.png" alt="LinkedIn"></a>
 		</div>
 	</footer>
 
