@@ -2024,6 +2024,9 @@ form input[type="submit"], form button, form input[type="reset"] {
   position: absolute;
   top: 15px;
   right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .section-title {
