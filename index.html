@@ -34,7 +34,7 @@
 
 <body>
 	<div id="click_tip" class="click_tip_bg">
-		<h3>Click on the symbols for info.</h3>
+		<h3 id="click_on_symbols"></h3>
 		<div style="display: flex;">
 			<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
 				<g id="Layer_1">
@@ -82,8 +82,8 @@
 		</div>
 		<div class="change-language">
 			<div class="dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button"
-					id="changeLanguageButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="changeLanguageButton"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				</button> <!-- Change language-->
 				<div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
 					<a class="dropdown-item text-white" href="#" onclick="changeLang('en')">English</a>
@@ -137,10 +137,8 @@
 							<figure class="project-thumbnail"><img src="images/nka.png" width="270px;" height="270px;"
 									alt="Project 4"></figure>
 							<h3 class="project-title"><a href="#">Nachhilfekleinanzeigen</a></h3>
-							<small class="project-subtitle">Nonprofit enterprise</small>
-							<p>A platform for RWTH students, where they can meet each other by creating and joining
-								meeting rooms, with the aim of establishing more connectivity among students and
-								thus a more fruitful studying experience.</p>
+							<small id="non_profit" class="project-subtitle"></small>
+							<p id="nka_summary"></p>
 							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
 					</div>
@@ -149,10 +147,8 @@
 							<figure class="project-thumbnail"><img src="images/sip.png" width="270px;" height="270px;"
 									alt="Project 3"></figure>
 							<h3 class="project-title"><a href="#">SIP</a></h3>
-							<small class="project-subtitle">Psychological experiment</small>
-							<p>Support children and young people in foster and adoptive families in coping
-								with previous traumatic experiences and to counteract the risk of future occurrence
-								of violence and bullying.</p>
+							<small id="psych_exp" class="project-subtitle"></small>
+							<p id="sip_summary"></p>
 							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
 					</div>
@@ -161,8 +157,8 @@
 							<figure class="project-thumbnail"><img src="images/pump.png" width="270px;" height="270px;"
 									alt="Project 1"></figure>
 							<h3 class="project-title"><a href="#">BART</a></h3>
-							<small class="project-subtitle">Psychological experiment</small>
-							<p>A gambling experiment for kids and teenagers. Measure how venturesome they are.</p>
+							<small id="psych_exp" class="project-subtitle"></small>
+							<p id="bart_summary"></p>
 							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
 					</div>
@@ -171,8 +167,8 @@
 							<figure class="project-thumbnail"><img src="images/verstaerken.jpg" width="270px;"
 									height="270px;" alt="Project 2"></figure>
 							<h3 class="project-title"><a href="#">Morphing</a></h3>
-							<small class="project-subtitle">Psychological experiment</small>
-							<p>Measure the emotion recognition capability of children and teenagers.</p>
+							<small id="psych_exp" class="project-subtitle"></small>
+							<p id="morphing_summary"></p>
 							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
 					</div>

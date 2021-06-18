@@ -13,9 +13,17 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
     $("#changeLanguageButton").html(data.lang_verbose[lang]);
     $("#coffee_text").html(data.coffee_text[lang]);
 
+    $('#non_profit').html(data.non_profit_enterprise_text[lang]);
+    $('#psych_exp').html(data.psychological_experiment_text[lang]);
+
+    $('#nka_summary').html(data.nka_summary[lang]);
+    $('#sip_summary').html(data.sip_summary[lang]);
+    $('#bart_summary').html(data.bart_summary[lang]);
+    $('#morphing_summary').html(data.morphing_summary[lang]);
+
     $("#vue_img").attr({ "data-content": data.vue_popover_content_text[lang], "data-title": data.confident[lang] });
 
-    $("#python_img").attr({ "data-content": data.vue_popover_content_text[lang], "data-title": data.confident[lang] });
+    $("#python_img").attr({ "data-content": data.python_popover_content_text[lang], "data-title": data.confident[lang] });
     $("#node_img").attr({ "data-content": data.node_popover_content_text[lang], "data-title": data.confident[lang] });
     $("#mongo_img").attr({ "data-content": data.mongo_popover_content_text[lang], "data-title": data.confident[lang] });
     $("#linux_img").attr({ "data-content": data.linux_popover_content_text[lang], "data-title": data.satisfactory[lang] });
@@ -28,6 +36,8 @@ const jsonXHR = $.getJSON("./all_texts.json", function (data) {
     $("#matlab_img").attr({ "data-content": data.matlab_popover_content_text[lang], "data-title": data.satisfactory[lang] });
     $("#keras_img").attr({ "data-content": data.keras_popover_content_text[lang], "data-title": data.learning[lang] });
     $("#tensorflow_img").attr({ "data-content": data.tensorflow_popover_content_text[lang], "data-title": data.learning[lang] });
+
+    $('#click_on_symbols').html(data.click_on_symbols_text[lang]);
 
     $('[data-toggle="popover"]').popover();
 });
