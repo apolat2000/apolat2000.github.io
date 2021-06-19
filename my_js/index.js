@@ -38,6 +38,8 @@ function updateLanguage() {
         $('#morphing_summary').html(data.morphing_summary[lang]);
 
         badgesArray.forEach(e => {
+            $(`#${e.name}_img`).popover('dispose');
+
             $(`#${e.name}_img`).popover({
                 trigger: 'focus',
                 placement: 'auto',
