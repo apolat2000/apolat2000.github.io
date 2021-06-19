@@ -1,8 +1,10 @@
-$('.popover-dismiss').popover({
-    trigger: 'focus'
-});
-
-updateLanguage();
+// $('.popover-dismiss').popover({
+//     trigger: 'focus'
+// });
+$(() => {
+    updateLanguage();
+    //$('[data-toggle="popover"]').popover();
+})
 
 function updateLanguage() {
 
@@ -30,27 +32,27 @@ function updateLanguage() {
         $('#bart_summary').html(data.bart_summary[lang]);
         $('#morphing_summary').html(data.morphing_summary[lang]);
 
-        $("#vue_img").attr({ "data-content": data.vue_popover_content_text[lang], "data-title": data.confident[lang] });
+        const badgesArray = [{ name: "vue", tit: "confident", tit: "confident" },
+        { name: "python", tit: "confident" }, { name: "node", tit: "confident" },
+        { name: "mongo", tit: "confident" }, { name: "linux", tit: "satisfactory" },
+        { name: "pandas", tit: "confident" }, { name: "git", tit: "confident" },
+        { name: "css", tit: "satisfactory" }, { name: "django", tit: "satisfactory" },
+        { name: "php", tit: "satisfactory" }, { name: "html", tit: "confident" },
+        { name: "matlab", tit: "satisfactory" }, { name: "keras", tit: "learning" },
+        { name: "tensorflow", tit: "learning" }];
 
-        $("#python_img").attr({ "data-content": data.python_popover_content_text[lang], "data-title": data.confident[lang] });
-        $("#node_img").attr({ "data-content": data.node_popover_content_text[lang], "data-title": data.confident[lang] });
-        $("#mongo_img").attr({ "data-content": data.mongo_popover_content_text[lang], "data-title": data.confident[lang] });
-        $("#linux_img").attr({ "data-content": data.linux_popover_content_text[lang], "data-title": data.satisfactory[lang] });
-        $("#pandas_img").attr({ "data-content": data.pandas_popover_content_text[lang], "data-title": data.confident[lang] });
-        $("#git_img").attr({ "data-content": data.git_popover_content_text[lang], "data-title": data.confident[lang] });
-        $("#css_img").attr({ "data-content": data.css_popover_content_text[lang], "data-title": data.satisfactory[lang] });
-        $("#django_img").attr({ "data-content": data.django_popover_content_text[lang], "data-title": data.satisfactory[lang] });
-        $("#php_img").attr({ "data-content": data.php_popover_content_text[lang], "data-title": data.satisfactory[lang] });
-        $("#html_img").attr({ "data-content": data.html_popover_content_text[lang], "data-title": data.confident[lang] });
-        $("#matlab_img").attr({ "data-content": data.matlab_popover_content_text[lang], "data-title": data.satisfactory[lang] });
-        $("#keras_img").attr({ "data-content": data.keras_popover_content_text[lang], "data-title": data.learning[lang] });
-        $("#tensorflow_img").attr({ "data-content": data.tensorflow_popover_content_text[lang], "data-title": data.learning[lang] });
+        badgesArray.forEach(e => {
+            $(`#${e.name}_img`).popover({
+                trigger: 'focus',
+                placement: 'auto',
+                content: data[`${e.name}_popover_content_text`][lang],
+                title: data[e.tit][lang]
+            })
+        });
 
         $('#click_on_symbols').html(data.click_on_symbols_text[lang]);
     });
 }
-
-$('[data-toggle="popover"]').popover();
 
 function changeLang(lan) {
     window.localStorage.setItem("lang", lan);
