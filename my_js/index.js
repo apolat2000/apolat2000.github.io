@@ -1,10 +1,15 @@
-// $('.popover-dismiss').popover({
-//     trigger: 'focus'
-// });
 $(() => {
     updateLanguage();
-    //$('[data-toggle="popover"]').popover();
-})
+});
+
+const badgesArray = [{ name: "vue", tit: "confident", tit: "confident" },
+{ name: "python", tit: "confident" }, { name: "node", tit: "confident" },
+{ name: "mongo", tit: "confident" }, { name: "linux", tit: "satisfactory" },
+{ name: "pandas", tit: "confident" }, { name: "git", tit: "confident" },
+{ name: "css", tit: "satisfactory" }, { name: "django", tit: "satisfactory" },
+{ name: "php", tit: "satisfactory" }, { name: "html", tit: "confident" },
+{ name: "matlab", tit: "satisfactory" }, { name: "keras", tit: "learning" },
+{ name: "tensorflow", tit: "learning" }];
 
 function updateLanguage() {
 
@@ -32,15 +37,6 @@ function updateLanguage() {
         $('#bart_summary').html(data.bart_summary[lang]);
         $('#morphing_summary').html(data.morphing_summary[lang]);
 
-        const badgesArray = [{ name: "vue", tit: "confident", tit: "confident" },
-        { name: "python", tit: "confident" }, { name: "node", tit: "confident" },
-        { name: "mongo", tit: "confident" }, { name: "linux", tit: "satisfactory" },
-        { name: "pandas", tit: "confident" }, { name: "git", tit: "confident" },
-        { name: "css", tit: "satisfactory" }, { name: "django", tit: "satisfactory" },
-        { name: "php", tit: "satisfactory" }, { name: "html", tit: "confident" },
-        { name: "matlab", tit: "satisfactory" }, { name: "keras", tit: "learning" },
-        { name: "tensorflow", tit: "learning" }];
-
         badgesArray.forEach(e => {
             $(`#${e.name}_img`).popover({
                 trigger: 'focus',
@@ -65,15 +61,11 @@ const inViewport = (entries, observer) => {
             if (entry.intersectionRatio > 0) {
                 $("#click_tip").css('display', 'flex');
                 $("body").css('overflow-y', 'hidden');
-                console.log('shown!');
                 Obs.unobserve(entry.target);
             }
         } else {
             entry.target.children[0].classList.toggle("is-inViewport", entry.isIntersecting);
-            console.log('toggled');
         }
-
-
     });
 };
 
@@ -91,6 +83,6 @@ function closeClickTip() {
     $("body").css('overflow-y', 'scroll');
 }
 
-function cantOpen(exp) {
+function cantOpen(exp) { // modal to show which says that experiment can't be opened
     $('#cantOpenModal').modal();
 }
