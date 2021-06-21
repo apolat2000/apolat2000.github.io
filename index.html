@@ -9,9 +9,9 @@
 		content="Hi, i am Ahmet Polat, Computer Science B. Sc. student at RWTH. A software engineer and full stack web developer. Welcome to my programming portfolio.">
 	<title>Ahmet Polat Portfolio</title>
 	<script>
-		if (!window.localStorage.getItem("lang")) {
-			window.localStorage.setItem("lang", "de");
-		}
+		// if (!window.localStorage.getItem("lang")) {
+		// 	window.localStorage.setItem("lang", "de");
+		// }
 	</script>
 
 	<!-- Loading third party fonts -->
@@ -38,7 +38,6 @@
 		<div style="display: flex;">
 			<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
 				<g id="Layer_1">
-					<title>Layer 1</title>
 					<path id="arrow_body" fill="none" stroke="#ffffff" stroke-width="8"
 						d="m3.85347,88.60204l9.45255,-13.5484l15.75425,-11.6129l14.85401,-9.03226l14.40389,-8.06452l10.35279,-2.25806c0,0.00001 5.40146,-1.93548 5.85158,-1.93548c0.45012,0 13.50364,0 14.40389,0c0.90024,0 5.40146,-0.96774 5.85158,-0.96774c0.45012,0 11.25304,0 12.6034,0c1.35036,0 7.65206,0 10.3528,0.32258c2.70072,0.32258 9.00242,0.64516 9.90267,0.64516c0.90024,0 8.5523,1.93548 9.45255,2.58065c0.90024,0.64516 8.10218,3.87097 9.45255,3.87097c1.35036,0 16.65449,0.32258 17.10462,0.32258"
 						id="svg_7" />
@@ -53,7 +52,6 @@
 				<img id="click_cursor" width="50px" src="./images/click_cursor.png" alt="">
 				<svg id="click_sparkle" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
 					<g id="Layer_1">
-						<title>Layer 1</title>
 						<path id="sparkle_1" d="m16.18012,35.37265l-9.09938,8.85094l9.09938,-8.85094z" stroke-width="4"
 							stroke="#ffffff" fill="#000000" />
 						<path id="sparkle_2" d="m13.9441,27.04967l-13.07454,-0.3416l13.07454,0.3416z" stroke-width="4"
@@ -77,7 +75,7 @@
 		<div
 			style="position: absolute; top: 25%; left: 50%; transform: translate(-50%,-25%); height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 			<h1 class="main-title">
-				<span id="main_header" style="background-color: #b3b3b3; color: black;"></span>
+				<span id="main_header" style="background-color: #b3b3b3; color: black;">Hi! Glad you are here.</span>
 			</h1>
 		</div>
 		<div class="change-language">
@@ -126,23 +124,47 @@
 
 	<div style="padding-top: 50px; padding-left: 0; padding-right: 0;">
 		<div class="container">
-			<h2 id="about_me_header" class="section-title"></h2> <!-- who i am-->
-			<p id="about_me_corpus"></p>
+			<h2 id="about_me_header" class="section-title">Who i am</h2> <!-- who i am-->
+			<p id="about_me_corpus">I am Ahmet Polat, born on 18.11.2000 in Istanbul, an undergraduate at RWTH Aachen
+				University, Computer Science B. Sc.<br>I am a learning and building enthusiast. Particularly AI, Data
+				Science, Full Stack Web Development and Product Management.<br>I am also a big nerd of board games,
+				particularly pen and paper systems. My favourite two are GURPS and Burning Wheel. I developed my own
+				complete pen and paper system over the years and it is still one of my future projects. If you are
+				interested, i can tell you about it and send some props.<br>I worked at KJP institute of RWTH Uniklinik
+				for one year, where my responsibilities were programming and maintenance of psychological experiments in
+				MATLAB, data processing and placing HTTP requests with Python, and developing visual psychological
+				experiments using HTML, Django, JavaScript and CSS. My work involved using git on a regular basis, using
+				team communication programs and here and there, reading some papers on the field. What led me to the web
+				development world was this job. It made me love it.<br>Then i took the "Web Technologies" lecture at
+				the university and got a wider grasp of what web development means. Me and three friends developed a
+				website for this course, which turned into my passion and i developed it once again all alone from
+				scratch, and I thereby learned Full Stack Web Development. I am still working on this project, because i
+				love it.<br>I loved my job a lot, but i decided to move along and discover novel things. I never want to
+				have a small scope on the world, so to be honest, i am currently kind of a jack of all trades. I'd call
+				myself "versatile", but i don't like to pretend to be presentable the whole time.<br>Another thing
+				worth mentioning is my interest in learning new languages. I am an autodidact Latin speaker (yeah,
+				literally speaker). I learned it by myself during highschool and at the end of the highschool, i tutored
+				Latin learners online over the internet. After highschool, i wanted to finally visit Rome. So i thought
+				to myself, "hey, why not learn Italian so that you can actually talk a bit". I learned it intensely
+				for 2 weeks before my flight, and Italian turned out to be a really pleasant language, so i couldn't
+				cease to learn it and currently i am visiting the B2 course at RWTH language center.</p>
 		</div>
 	</div>
 
 	<div>
 		<div class="fullwidth-block latest-projects-section">
 			<div class="container">
-				<h2 id="projects_header" class="section-title"></h2> <!-- My projects-->
+				<h2 id="projects_header" class="section-title">My Projects</h2> <!-- My projects-->
 				<div class="row">
 					<div class="col-sm-6 col-md-3">
 						<div class="project">
 							<figure class="project-thumbnail"><img src="images/nka.png" width="270px;" height="270px;"
 									alt="Project 4"></figure>
 							<h3 class="project-title"><a href="#">Nachhilfekleinanzeigen</a></h3>
-							<small id="non_profit" class="project-subtitle"></small>
-							<p id="nka_summary"></p>
+							<small id="non_profit" class="project-subtitle">Non-profit enterprise</small>
+							<p id="nka_summary">A platform for RWTH students, where they can meet each other by creating
+								and joining meeting rooms, with the aim of establishing more connectivity among students
+								and thus a more fruitful studying experience.</p>
 							<a href="#" class="more-link"><img src="images/arrow.png" alt=""></a>
 						</div>
 					</div>
@@ -151,8 +173,10 @@
 							<figure class="project-thumbnail"><img src="images/sip.png" width="270px;" height="270px;"
 									alt="Project 3"></figure>
 							<h3 class="project-title"><a href="#">SIP</a></h3>
-							<small class="project-subtitle psych_exp"></small>
-							<p id="sip_summary"></p>
+							<small class="project-subtitle psych_exp">Psychological experiment</small>
+							<p id="sip_summary">Support children and young people in foster and adoptive families
+								incoping with previous traumatic experiences and to counteract the risk of future
+								occurrence of violence and bullying.</p>
 							<!-- <a href="./experiments/SIP/" class="more-link"><img src="images/arrow.png" alt=""></a> -->
 							<img style="cursor: pointer;" src="images/arrow.png" alt="" onclick="cantOpen('sip')"></a>
 						</div>
@@ -181,8 +205,9 @@
 							<figure class="project-thumbnail"><img src="images/pump.png" width="270px;" height="270px;"
 									alt="Project 1"></figure>
 							<h3 class="project-title"><a href="#">BART</a></h3>
-							<small class="project-subtitle psych_exp"></small>
-							<p id="bart_summary"></p>
+							<small class="project-subtitle psych_exp">Psychological experiment</small>
+							<p id="bart_summary">"A gambling experiment for kids and teenagers. Measure how venturesome
+								they are.</p>
 							<img style="cursor: pointer;" src="images/arrow.png" alt="" onclick="cantOpen('bart')"></a>
 							<!-- <a href="./experiments/BART/" class="more-link"><img src="images/arrow.png" alt=""></a> -->
 						</div>
@@ -192,8 +217,9 @@
 							<figure class="project-thumbnail"><img src="images/verstaerken.jpg" width="270px;"
 									height="270px;" alt="Project 2"></figure>
 							<h3 class="project-title"><a href="#">Morphing</a></h3>
-							<small class="project-subtitle psych_exp"></small>
-							<p id="morphing_summary"></p>
+							<small class="project-subtitle psych_exp">Psychological experiment</small>
+							<p id="morphing_summary">Measure the emotion recognition capability of children and
+								teenagers.</p>
 							<img style="cursor: pointer;" src="images/arrow.png" alt=""
 								onclick="cantOpen('morphing')"></a>
 							<!-- <a href="./experiments/Morphing/" class="more-link"><img src="images/arrow.png" alt=""></a> -->
@@ -211,8 +237,9 @@
 					style="background-color: #b3b3b3; color: black;">© Reddit, u/xyloben1</span></a>
 			<!--source: https://www.reddit.com/r/oddlysatisfying/comments/ceb5wi/this_board_game_collection_a_friend_of_mine_has/-->
 			<h1 class="main-title" style="margin-bottom: 0px;"><span id="collection_header"
-					style="background-color: #b3b3b3; color: black;"></span></h1> <!-- My collection -->
-			<h2><span id="collection_sub_header" style="background-color: #b3b3b3; color: black;"></span< /h2>
+					style="background-color: #b3b3b3; color: black;">My Collection</span></h1> <!-- My collection -->
+			<h2><span id="collection_sub_header" style="background-color: #b3b3b3; color: black;">I like expanding it.
+					</span< /h2>
 					<!-- like expanding -->
 		</div>
 	</div>
