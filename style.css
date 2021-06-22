@@ -36,12 +36,6 @@
   position: static;
 }
 
-.source {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-}
-
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -538,6 +532,15 @@ form input[type="submit"], form button, form input[type="reset"] {
   display: block;
   overflow: hidden;
   height: 0;
+}
+
+.pp {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  transform: translate(5%, calc(-0% + 100px));
+  width: 200px;
+  height: 200px;
 }
 
 @media (min-width: 768px) {
@@ -1746,6 +1749,35 @@ form input[type="submit"], form button, form input[type="reset"] {
   background: url("images/next.png");
 }
 
+.source {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.welcome-div {
+  position: relative;
+  width: 100%;
+  height: calc(100vh + 100px);
+  text-align: center;
+  background-image: url(./images/bg_keller.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.collection-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-image: url(./images/boardgamecollection.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
 .click_tip_bg {
   position: fixed;
   display: none;
@@ -2183,6 +2215,10 @@ form input[type="submit"], form button, form input[type="reset"] {
 @media screen and (max-width: 640px) {
   .news-list li {
     width: 100%;
+  }
+  .pp {
+    width: 150px;
+    height: 150px;
   }
 }
 
