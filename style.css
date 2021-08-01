@@ -3,10 +3,20 @@
   transform: scale(0.1);
 }
 
+[data-inviewporttype="scale-in"].is-inViewport {
+  transform: scale(1);
+}
+
 [data-inviewporttype="scale-out"] {
   transition: 1s ease;
   transform: scale(3);
   opacity: 0;
+}
+
+[data-inviewporttype="scale-out"].is-inViewport {
+  transform: scale(1);
+  opacity: 1;
+  position: static;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
