@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Box, Button, Flex, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Center, Flex, Text, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 
 interface Props {
@@ -19,9 +19,9 @@ const ProjectCard: React.FC<Props> = ({
 }) => {
   return (
     <Box backgroundColor="gray.700" borderBottomRadius={12}>
-      <Box margin={4} padding={4} backgroundColor="white">
+      <Center margin={4} padding={4} backgroundColor="white">
         {children}
-      </Box>
+      </Center>
       <VStack paddingX={4} paddingBottom={4} height="full">
         <Box>
           <Text width="full" as="h3" fontSize="3xl" fontWeight="bold">
