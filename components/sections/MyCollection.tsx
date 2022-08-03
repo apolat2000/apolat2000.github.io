@@ -12,7 +12,7 @@ const MyCollection: React.FC<Props> = ({ subtitle, title }) => {
     <>
       <MyCollectionHeader subtitle={subtitle} title={title} />
       <Box paddingX={[2, 8, 48, 64]} paddingTop={12}>
-        <SimpleGrid columns={[2, 2, 2, 3, 4]} gap={4} rowGap={16}>
+        <SimpleGrid columns={[1, 2, 2, 3, 4]} gap={4} rowGap={16}>
           <CollectionItem
             confidence="confident"
             description="I am really confident in Vue.js and I can pull of big-scaled projects with our without team collab. I am quite fluent in it. To see an example, you can refer to the Admin-App, which is a component of the software Project Nisaba."

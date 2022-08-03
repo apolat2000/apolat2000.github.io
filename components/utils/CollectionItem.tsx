@@ -50,6 +50,7 @@ const CollectionItem: React.FC<Props> = ({
       onClose={onPopoverClose}
       placement="top"
       colorScheme="blackAlpha"
+      preventOverflow={false}
     >
       <PopoverTrigger>
         <Center
