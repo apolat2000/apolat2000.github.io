@@ -28,8 +28,8 @@ const CollectionItem: React.FC<Props> = ({
   leftMarginInPx = 0,
   name,
 }) => {
-  const { isOpen: isScaleFadeOpen, onToggle: onScaleFadeToggle } =
-    useDisclosure();
+  // const { isOpen: isScaleFadeOpen, onToggle: onScaleFadeToggle } =
+  //   useDisclosure();
   const {
     isOpen: isPopoverOpen,
     onClose: onPopoverClose,
@@ -38,9 +38,9 @@ const CollectionItem: React.FC<Props> = ({
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  useEffect(() => {
-    if (isInView && !isScaleFadeOpen) onScaleFadeToggle();
-  }, [isInView, isScaleFadeOpen]);
+  // useEffect(() => {
+  //   if (isInView && !isScaleFadeOpen) onScaleFadeToggle();
+  // }, [isInView, isScaleFadeOpen]);
 
   return (
     <Popover
@@ -57,11 +57,11 @@ const CollectionItem: React.FC<Props> = ({
           onMouseLeave={onPopoverClose}
           onMouseEnter={onPopoverToggle}
         >
-          <ScaleFade initialScale={1.5} in={isScaleFadeOpen} ref={ref}>
-            <Box width="150px" marginLeft={`${leftMarginInPx}px`}>
-              {children}
-            </Box>
-          </ScaleFade>
+          {/* <ScaleFade initialScale={1.5} in={isScaleFadeOpen} ref={ref}> */}
+          <Box width="150px" marginLeft={`${leftMarginInPx}px`}>
+            {children}
+          </Box>
+          {/* </ScaleFade> */}
         </Center>
       </PopoverTrigger>
       <PopoverContent backgroundColor="black">
