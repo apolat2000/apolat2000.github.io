@@ -1,0 +1,1 @@
+I used Next.js and Chakra UI to build this.
