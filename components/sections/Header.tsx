@@ -55,8 +55,8 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
           >
             <Image
               src="/github_logo.png"
-              width="32"
-              height="32"
+              width="32px"
+              height="32px"
               alt="GitHub logo"
             />
           </a>
@@ -69,8 +69,8 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
           >
             <Image
               src="/lin_logo.png"
-              width="32"
-              height="32"
+              width="32px"
+              height="32px"
               alt="LinkedIn logo"
             />
           </a>
