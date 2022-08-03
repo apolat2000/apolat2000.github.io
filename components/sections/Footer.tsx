@@ -1,5 +1,5 @@
-import { Text, VStack } from "@chakra-ui/react";
-import Image from "next/image";
+import { Image, Text, VStack } from "@chakra-ui/react";
+// import Image from "next/image";
 import linLogo from "../../public/lin_logo.png";
 
 interface Props {}
@@ -33,9 +33,8 @@ const Footer: React.FC<Props> = ({}) => {
         >
           <Image
             src={"/lin_logo.png"}
-            width="48"
-            height="48"
-            layout="fixed"
+            width="48px"
+            height="48px"
             alt="Logo of LinkedIn"
           />
         </a>
