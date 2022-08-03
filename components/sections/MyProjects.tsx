@@ -1,11 +1,10 @@
-import { Box, SimpleGrid, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import ProjectCard from "../utils/ProjectCard";
+
 import nisabaImage from "../../public/project-images/_nisaba.png";
 import m3Image from "../../public/project-images/m3connect.png";
 import uniklinikImage from "../../public/project-images/uniklinik.svg";
 import dynamicGraphExplorationImage from "../../public/project-images/dynamic-graph-exploration.png";
-import threeDGridSceneImage from "../../public/project-images/3d-grid-scene.png";
 import researchImage from "../../public/project-images/research.png";
 
 interface Props {
@@ -32,11 +31,10 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
           tryLink="https://eloquent-euler-24a677.netlify.app/"
         >
           <Image
-            src={nisabaImage}
+            src="/project-images/_nisaba.png"
             alt="Logo of the SaaS 'Nisaba by Aktion Sodis'."
-            layout="responsive"
-            width="256"
-            height="158"
+            width="256px"
+            height="158px"
           />
         </ProjectCard>
         <ProjectCard
@@ -45,11 +43,10 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
           learnMoreLink="https://www.m3connect.de/"
         >
           <Image
-            src={m3Image}
+            src="/project-images/m3connect.png"
             alt="Logo of m3connect."
-            layout="responsive"
-            width="256"
-            height="152"
+            width="256px"
+            height="152px"
           />
         </ProjectCard>
         <ProjectCard
@@ -58,11 +55,10 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
           learnMoreLink="https://www.ukaachen.de/en/clinics-institutes/klinik-fuer-psychiatrie-psychosomatik-und-psychotherapie-des-kindes-und-jugendalters/"
         >
           <Image
-            src={uniklinikImage}
+            src="/project-images/uniklinik.svg"
             alt="Logo of Uniklinik RWTH Aachen."
-            width="256"
-            height="72"
-            layout="responsive"
+            width="256px"
+            height="72px"
           />
         </ProjectCard>
         <ProjectCard
@@ -72,11 +68,10 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
           learnMoreLink="https://www.linkedin.com/posts/ahmet-polat-profile_rwth-science-egocentrism-activity-6901555859835412481-KK3E?utm_source=linkedin_share&utm_medium=member_desktop_web"
         >
           <Image
-            src={dynamicGraphExplorationImage}
+            src="/project-images/dynamic-graph-exploration.png"
             alt="An image from the web tool for exploring dynamic graphs egocentrically."
-            width="256"
-            height="256"
-            layout="responsive"
+            width="256px"
+            height="256px"
           />
         </ProjectCard>
         <ProjectCard
@@ -86,11 +81,10 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
           learnMoreLink="https://github.com/apolat2000/3d-grid-scene#readme"
         >
           <Image
-            src={threeDGridSceneImage}
+            src="/project-images/3d-grid-scene.png"
             alt="An image from a web tool for manipulating 3-D objects on a grid scene."
-            width="256"
-            height="158"
-            layout="responsive"
+            width="256px"
+            height="158px"
           />
         </ProjectCard>
         <ProjectCard
@@ -99,11 +93,10 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
           Concerning Music Genres" and "Egocentric Exploratory Interfaces and Dynamic Network Visualization". I am not sure whether I am allowed to publish them by myself, so I will not put the papers here.'
         >
           <Image
-            src={researchImage}
+            src="/project-images/research.png"
             alt="A collage of two research papers put on each other."
-            width="256"
-            height="256"
-            layout="responsive"
+            width="256px"
+            height="256px"
           />
         </ProjectCard>
       </SimpleGrid>

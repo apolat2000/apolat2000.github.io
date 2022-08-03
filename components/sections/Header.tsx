@@ -6,8 +6,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import githubLogo from "../../public/github_logo.png";
-import linLogo from "../../public/lin_logo.png";
 
 interface Props {
   welcomeMessage: string;
@@ -56,7 +54,7 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
             rel="noreferrer"
           >
             <Image
-              src={githubLogo}
+              src="/github_logo.png"
               width="32"
               height="32"
               alt="GitHub logo"
@@ -71,7 +69,7 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
             rel="noreferrer"
           >
             <Image
-              src={linLogo}
+              src="/lin_logo.png"
               width="32"
               height="32"
               alt="LinkedIn logo"
