@@ -23,6 +23,7 @@ interface Props {
 
 const CollectionItem: React.FC<Props> = ({
   children,
+  confidence,
   description,
   leftMarginInPx = 0,
   name,
@@ -64,7 +65,9 @@ const CollectionItem: React.FC<Props> = ({
         </Center>
       </PopoverTrigger>
       <PopoverContent backgroundColor="black">
-        <PopoverHeader fontWeight="semibold">{name}</PopoverHeader>
+        <PopoverHeader fontWeight="semibold">
+          {name} ({confidence})
+        </PopoverHeader>
         <PopoverArrow />
         <PopoverBody>{description}</PopoverBody>
       </PopoverContent>
