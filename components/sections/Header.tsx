@@ -1,11 +1,11 @@
 import {
   Box,
   Center,
+  Image,
   Text,
   useBreakpointValue,
   VStack,
 } from "@chakra-ui/react";
-import Image from "next/image";
 
 interface Props {
   welcomeMessage: string;
@@ -58,7 +58,6 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
               width="32"
               height="32"
               alt="GitHub logo"
-              layout="responsive"
             />
           </a>
         </Box>
@@ -73,7 +72,6 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
               width="32"
               height="32"
               alt="LinkedIn logo"
-              layout="responsive"
             />
           </a>
         </Box>
