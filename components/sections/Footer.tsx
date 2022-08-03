@@ -1,6 +1,5 @@
 import { Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
-import githubLogo from "../../public/github_logo.png";
 import linLogo from "../../public/lin_logo.png";
 
 interface Props {}
@@ -33,7 +32,7 @@ const Footer: React.FC<Props> = ({}) => {
           rel="noreferrer"
         >
           <Image
-            src={linLogo}
+            src={"/lin_logo.png"}
             width="48"
             height="48"
             layout="fixed"
