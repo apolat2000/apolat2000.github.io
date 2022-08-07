@@ -16,8 +16,6 @@ interface Props {
   dateText?: string;
   imgPaddingX?: number;
   imgPaddingY?: number;
-  marginLeft: number;
-  marginRight: number;
   isOnLeftSide: boolean;
 }
 
