@@ -26,8 +26,8 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
           as="h1"
           fontSize="5xl"
           textTransform="uppercase"
-          backgroundColor="#b3b3b3"
-          color="black"
+          backgroundColor="#656c71"
+          color="white"
           fontWeight="bold"
           userSelect="none"
         >

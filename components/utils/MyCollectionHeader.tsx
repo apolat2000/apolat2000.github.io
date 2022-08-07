@@ -23,6 +23,7 @@ const MyCollectionHeader: React.FC<Props> = ({ subtitle, title }) => {
         backgroundPosition: "center center",
         backgroundSize: "cover",
         zIndex: 1,
+        userSelect: "none",
       }}
     >
       <Link

@@ -79,8 +79,8 @@ const ExperienceItem: React.FC<Props> = ({
               right: isOnLeftSide ? "-248px" : undefined,
             }}
             borderRadius={4}
-            background="gray.200"
-            color="black"
+            background="#363b3e"
+            color="white"
             padding={2}
           >
             <Text>{dateText}</Text>
