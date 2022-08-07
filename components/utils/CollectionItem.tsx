@@ -58,6 +58,7 @@ const CollectionItem: React.FC<Props> = ({
           onClick={onPopoverToggle}
           onMouseLeave={onPopoverClose}
           onMouseEnter={onPopoverToggle}
+          zIndex={1}
         >
           <ScaleFade initialScale={0.5} in={isScaleFadeOpen} ref={ref}>
             <Box width="150px" marginLeft={`${leftMarginInPx}px`}>

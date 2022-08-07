@@ -22,6 +22,7 @@ const MyCollectionHeader: React.FC<Props> = ({ subtitle, title }) => {
         backgroundImage: "url(/boardgame-collection.jpg)",
         backgroundPosition: "center center",
         backgroundSize: "cover",
+        zIndex: 1,
       }}
     >
       <Link

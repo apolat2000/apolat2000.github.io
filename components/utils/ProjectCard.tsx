@@ -18,7 +18,7 @@ const ProjectCard: React.FC<Props> = ({
   tryLink,
 }) => {
   return (
-    <Box backgroundColor="gray.700" borderBottomRadius={12}>
+    <Box backgroundColor="gray.700" borderBottomRadius={12} zIndex={1}>
       <Center margin={4} padding={4} backgroundColor="white">
         {children}
       </Center>

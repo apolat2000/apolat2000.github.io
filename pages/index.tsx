@@ -6,6 +6,7 @@ import Header from "../components/sections/Header";
 import MyCollection from "../components/sections/MyCollection";
 import MyProjects from "../components/sections/MyProjects";
 import WhoIAm from "../components/sections/WhoIAm";
+import ParticlesBG from "../components/utils/ParticlesBG";
 
 const Home: NextPage = () => {
   return (
@@ -23,12 +24,13 @@ const Home: NextPage = () => {
       <Header welcomeMessage="Hi! Glad you are here." />
       <WhoIAm
         title="Who I Am"
-        description="I am Ahmet Polat, I love programming, languages, tabletop games and jazz. Currently, I am studying Computer
-        Science B. Sc. at RWTH Aachen University. I enjoy building things and sharing it with others."
+        description="I am Ahmet Polat, I love computer science, languages, tabletop games and jazz. Currently, I am studying Computer
+        Science B. Sc. at RWTH Aachen University. I like researching, building and sharing with others."
       />
       <MyProjects title="Projects & Occupations" />
       <MyCollection title="My Collection" subtitle="I like expanding it." />
       <Footer />
+      <ParticlesBG />
     </Box>
   );
 };

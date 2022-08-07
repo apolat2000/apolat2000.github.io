@@ -25,10 +25,7 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
   return (
     <Center
       style={{
-        height: "calc(100vh + 100px)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundImage: "url(/head-background.jpg)",
+        height: "calc(100vh - 100px)",
       }}
       textAlign="center"
       position="relative"
