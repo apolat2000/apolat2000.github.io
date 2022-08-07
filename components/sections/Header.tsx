@@ -12,16 +12,6 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ welcomeMessage }) => {
-  const left = useBreakpointValue(
-    {
-      base: 25,
-      md: 50,
-    },
-    {
-      fallback: "md",
-    }
-  ) as number;
-
   return (
     <Center
       style={{
@@ -39,6 +29,7 @@ const Header: React.FC<Props> = ({ welcomeMessage }) => {
           backgroundColor="#b3b3b3"
           color="black"
           fontWeight="bold"
+          userSelect="none"
         >
           {welcomeMessage}
         </Text>

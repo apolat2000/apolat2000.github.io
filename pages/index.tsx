@@ -5,7 +5,9 @@ import Footer from "../components/sections/Footer";
 import Header from "../components/sections/Header";
 import MyCollection from "../components/sections/MyCollection";
 import MyProjects from "../components/sections/MyProjects";
+import Opera from "../components/sections/Opera";
 import WhoIAm from "../components/sections/WhoIAm";
+import WorkingExperience from "../components/sections/WorkingExperience";
 import ParticlesBG from "../components/utils/ParticlesBG";
 
 const Home: NextPage = () => {
@@ -27,7 +29,9 @@ const Home: NextPage = () => {
         description="I am Ahmet Polat, I love computer science, languages, tabletop games and jazz. Currently, I am studying Computer
         Science B. Sc. at RWTH Aachen University. I like researching, building and sharing with others."
       />
-      <MyProjects title="Projects & Occupations" />
+      {/* <MyProjects title="Projects & Occupations" /> */}
+      <Opera title="Opera" />
+      <WorkingExperience title="Working Experience" />
       <MyCollection title="My Collection" subtitle="I like expanding it." />
       <Footer />
       <ParticlesBG />
