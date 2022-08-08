@@ -61,7 +61,7 @@ const WorkingExperience: React.FC<Props> = ({ title, description }) => {
     {
       id: 1,
       description:
-        "I worked at the 'Klinik für Psychiatrie, Psychosomatik und Psychotherapie des Kindes- und Jugendalters' between 04/2020-04/2021 as a general-purpose IT guy. I did mainly front-end web development and data processing.",
+        'I worked at the "Klinik für Psychiatrie, Psychosomatik und Psychotherapie des Kindes- und Jugendalters" between as a general-purpose IT guy. I did mainly front-end web development and data processing. My work also involved reading & understanding and acting on some papers on the field.',
       dateText: "April 2020 - April 2021",
       image: (
         <Image

@@ -26,7 +26,7 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
       <SimpleGrid columns={[1, 2, 2, 3]} gap={4}>
         <ProjectCard
           title="Nisaba"
-          description="A SaaS with the target group as the organizations that help certain communities for the improvement of their life communities, i.e. development collaboration (aid). It is open source. I am the (honorary) tech lead and also develop the 'Admin-App'. Nisaba is currently used by 3 different organizations in Ruanda, Malawi and Bolivia."
+          description="A SaaS with the target group as the organizations that help certain communities for the improvement of their life quality, i.e. development collaboration (aid). It is open source. I am the (honorary) tech lead and also develop the 'Admin-App'. Nisaba is currently used by 3 different organizations in Ruanda, Malawi and Bolivia."
           learnMoreLink="https://www.linkedin.com/company/nisaba-by-aktion-sodis/"
           tryLink="https://eloquent-euler-24a677.netlify.app/"
         >
