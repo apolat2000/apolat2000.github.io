@@ -49,6 +49,7 @@ const ExperienceItem: React.FC<Props> = ({
       marginRight={isOnLeftSide && !isSmallScreen ? 4 : 0}
       position="relative"
       marginY={4}
+      flexDirection={isSmallScreen ? "column" : "row"}
     >
       {!isSmallScreen && (
         <>
@@ -90,13 +91,14 @@ const ExperienceItem: React.FC<Props> = ({
       <Center
         margin={2}
         backgroundColor="white"
-        width="128px"
+        minWidth={32}
+        maxWidth={48}
         paddingX={imgPaddingX ? imgPaddingX : 2}
         paddingY={imgPaddingY ? imgPaddingY : 0}
       >
         {children}
       </Center>
-      <Center paddingY={4} paddingRight={2}>
+      <Center paddingY={4} paddingX={isSmallScreen ? 2 : 0} paddingRight={2}>
         <Text as="p" fontSize="sm">
           {isSmallScreen && <Text>{dateText}</Text>}
           {description}

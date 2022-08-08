@@ -48,15 +48,8 @@ const WorkingExperience: React.FC<Props> = ({ title, description }) => {
       description:
         'I work at m3connect as a "working student". I am in the software team and we develop back-end, devops and highly generic client-side solutions.',
       dateText: "August 2021 - Present",
-      image: (
-        <Image
-          src="/project-images/m3connect.png"
-          layout="fixed"
-          width="256"
-          height="72"
-          alt="Logo of m3connect."
-        />
-      ),
+      image: <Image src={m3Image} alt="Logo of m3connect." />,
+      imgPaddingY: 4,
     },
     {
       id: 1,
@@ -64,15 +57,8 @@ const WorkingExperience: React.FC<Props> = ({ title, description }) => {
         'I worked at the "Klinik für Psychiatrie, Psychosomatik und Psychotherapie des Kindes- und Jugendalters" between as a general-purpose IT guy. I did mainly front-end web development and data processing. My work also involved reading & understanding and acting on some papers on the field.',
       dateText: "April 2020 - April 2021",
       image: (
-        <Image
-          src="/project-images/uniklinik.svg"
-          layout="fixed"
-          width="185"
-          height="52"
-          alt="Logo of Uniklinik RWTH Aachen."
-        />
+        <Image src={uniklinikImage} alt="Logo of Uniklinik RWTH Aachen." />
       ),
-      imgPaddingX: 4,
       imgPaddingY: 3,
     },
   ];
