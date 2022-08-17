@@ -87,7 +87,7 @@ const MyCollection: React.FC<Props> = ({ subtitle, title }) => {
           </CollectionItem>
           <CollectionItem
             confidence="satisfactory"
-            description="I use docker actively for my work at m3connect. We have docker containers for our development and our production environment. We also use docker image builds for staging and production, and also make use of pipelines for continuous integration. I use Docker also for my personal projects, and a future plan for Nisaba is to containerize the software bundle of each organization that uses it ."
+            description="I use docker actively for my work at m3connect. We have docker containers for our development and our production environment. We also use docker image builds for staging and production, and also make use of pipelines for continuous integration. I use Docker also for my personal projects, and a future plan for Nisaba is to containerize the software bundle of each organization that uses it."
             name="Docker"
           >
             <Image
