@@ -39,7 +39,7 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
         </ProjectCard>
         <ProjectCard
           title="m3connect"
-          description="I work here as a 'working student' since August 2021. I am in the software team and we develop back-end, devops and highly generic client-side solutions."
+          description="I work here as a 'working student'. I am in the software team and we develop back-end, devops and highly generic client-side solutions on an agile basis."
           learnMoreLink="https://www.m3connect.de/"
         >
           <Image
@@ -51,7 +51,7 @@ const MyProjects: React.FC<Props> = ({ title, description }) => {
         </ProjectCard>
         <ProjectCard
           title="RWTH Uniklinik"
-          description="I worked at the 'Klinik für Psychiatrie, Psychosomatik und Psychotherapie des Kindes- und Jugendalters' between 04/2020-04/2021 as a general-purpose IT guy. I did mainly front-end web development and data processing."
+          description="I worked in the psychiatry clinic as a general-purpose IT person. I did mainly web development and data processing."
           learnMoreLink="https://www.ukaachen.de/en/clinics-institutes/klinik-fuer-psychiatrie-psychosomatik-und-psychotherapie-des-kindes-und-jugendalters/"
         >
           <Image

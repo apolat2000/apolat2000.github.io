@@ -17,7 +17,8 @@ const Home: NextPage = () => {
         <title>Ahmet Polat | The Portfolio</title>
         <meta
           name="description"
-          content="Ahmet Polat software developer portfolio"
+          content="Hi! I am Ahmet Polat. I love computer science, languages, tabletop games and jazz. Currently, I am studying Computer
+          Science B. Sc. at RWTH Aachen University. I like researching, building and sharing with others."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -30,7 +31,7 @@ const Home: NextPage = () => {
         Science B. Sc. at RWTH Aachen University. I like researching, building and sharing with others."
       />
       {/* <MyProjects title="Projects & Occupations" /> */}
-      <Opera title="Opera" />
+      <Opera title="Projects" />
       <WorkingExperience title="Working Experience" />
       <MyCollection title="My Collection" subtitle="I like expanding it." />
       <Footer />
