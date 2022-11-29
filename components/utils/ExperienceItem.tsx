@@ -76,8 +76,8 @@ const ExperienceItem: React.FC<Props> = ({
           <Box
             style={{
               position: "absolute",
-              left: isOnLeftSide ? undefined : "-248px",
-              right: isOnLeftSide ? "-248px" : undefined,
+              left: isOnLeftSide ? undefined : "-204px",
+              right: isOnLeftSide ? "-264px" : undefined,
             }}
             borderRadius={4}
             background="#363b3e"
