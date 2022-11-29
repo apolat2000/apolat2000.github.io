@@ -46,15 +46,15 @@ const WorkingExperience: React.FC<Props> = ({ title, description }) => {
     {
       id: 0,
       description:
-        'I work at m3connect as a "working student". I am in the software team and we develop back-end, devops and highly generic client-side solutions.',
-      dateText: "August 2021 - Present",
+        'I worked at m3connect as a "working student". I was in the software team and we developed back-end, devops and highly generic client-side solutions on an agile basis.',
+      dateText: "August 2021 - November 2022",
       image: <Image src={m3Image} alt="Logo of m3connect." />,
       imgPaddingY: 4,
     },
     {
       id: 1,
       description:
-        'I worked at the "Klinik für Psychiatrie, Psychosomatik und Psychotherapie des Kindes- und Jugendalters" between as a general-purpose IT guy. I did mainly front-end web development and data processing. My work also involved reading & understanding and acting on some papers on the field.',
+        "I worked in the psychiatry clinic as a general-purpose IT person. I did mainly web development and data processing. My work also involved reading & understanding and acting on some papers on the field.",
       dateText: "April 2020 - April 2021",
       image: (
         <Image src={uniklinikImage} alt="Logo of Uniklinik RWTH Aachen." />
