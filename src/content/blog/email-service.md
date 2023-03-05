@@ -33,19 +33,19 @@ Below is my list of requirements for an email microservice.
 
 ##### **"Emails should be sent with the recipient's name."**
 
-Well, in a real-world setting, your boss will very probably be at least 30+ years of age and like the idea of addressing the clients by their first names. I can imagine why people tend to believe that this is a good idea. After all, when writing a heartfelt letter to a friend, we write their names. It is supposed to bear the meaning that we care about the person. But let's be honest. Neither are the clients our friends, nor do they like us. We literally just caused an extra unwanted email in their mailbox. And we are one of the many companies that do the same. At this point, it has become the norm.
+Well, in a real-world setting, your boss will very probably be at least 30+ years of age and like the idea of addressing the clients by their first names. I can imagine why people tend to believe that this is a good idea. After all, when writing a heartfelt letter to a friend, we write their names. It is supposed to bear the meaning that we care about the person. But let's be honest. Neither are the clients our friends, nor do they like us. We literally just caused an extra unwanted email in their mailbox. And we are one of the many companies that do the same.
 
 > [Some smart people who realized this](https://www.trymaverick.com) have even brought this further by founding a startup for generating deepfake videos of some employee of the company heartfully thanking the customer Adam, 张伟, محمد or Lisa for buying an extra pair of shoes, or a t-shirt, using the same video.
->
-> So, overall, we want to ensure that our email microservice is capable of this and that your boss will be content.
+
+However, at this point, this has become the norm and complying with this kind of looks like inevitable. So, overall, we want to ensure that our email microservice is capable of this and that your boss will be content.
 
 ##### User's Interests
 
-Understandably. Entertain your users with relevant stuff.
+Understandably. Entertain your users with relevant stuff. Just don't be too accurate so that you don't scare them.
 
 ##### **Localized**
 
-Localization falls under the personalization umbrella. Visiting a website with `en` set as my accepted language in the browser but still getting the content in German gives me a feeling of personal addressing. Besides this "caring" feeling, localizing is also crucial for many users since [40% of the world's population can speak only one language](https://www.researchgate.net/figure/Percentage-of-Monolingual-Bilingual-and-Multilingual-Websites-a-Non-English-Speaking_fig2_340868171). We don't want to miss out on them.
+Localization falls under the personalization umbrella. Visiting a website with `en` set as my accepted language in the browser but still getting the content in German definitely gives me a feeling of heartwarming personal addressing. Besides this "caring" feeling, localizing is crucial for many users also for other reasons since [40% of the world's population can speak only one language](https://www.researchgate.net/figure/Percentage-of-Monolingual-Bilingual-and-Multilingual-Websites-a-Non-English-Speaking_fig2_340868171). We don't want to miss out on them.
 
 #### **Automated**
 
@@ -65,7 +65,7 @@ This is why we are designing it as a microservice.
 
 #### **Testable**
 
-Before we send the emails in production, we want to ensure they are correct. To do this, we will need a **preview logic**.
+Before we send emails in production, we want to ensure we can do so correctly. To do this, we will need a **preview logic**.
 
 #### **Modular**
 
