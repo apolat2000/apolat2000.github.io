@@ -10,6 +10,7 @@ tags:
   - microservices
   - localization
   - Handlebars
+ogImage: ""
 description:
   Learn the general requirements for an email microservice and modularly ship it
   into your existing system. Covering localization, templating and personalization.
