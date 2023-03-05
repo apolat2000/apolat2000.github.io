@@ -19,7 +19,7 @@ description:
 
 Use NestJS with Redis, Handlebars and Joi to create a microservice.
 
-Employ two rounds of template resolution: the first for localization and the second for personalization. Find the source code on [GitHub](<[TODO](https://github.com/apolat2000/mail-microservice)>).
+Employ two rounds of template resolution: the first for localization and the second for personalization. Find the source code on [GitHub](https://github.com/apolat2000/mail-microservice).
 
 ## Table of contents
 
@@ -436,4 +436,4 @@ Now, when we run `yarn test` and see that `mail.templates.spec.ts` fails, we can
 
 This microservice can be expanded to maintain statistics about the emails sent and allow sending mails without templates. This would allow us to manually resend the emails that failed for some reason by looking into the template that was meant, the context from the request object and the recipients' list.
 
-If you feel like you can improve [this microservice](<[TODO](https://github.com/apolat2000/mail-microservice)>), feel free to fork it and send a pull request.
+If you feel like you can improve [this microservice](https://github.com/apolat2000/mail-microservice), feel free to fork it and send a pull request.
