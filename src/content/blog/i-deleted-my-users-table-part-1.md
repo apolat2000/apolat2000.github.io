@@ -284,4 +284,4 @@ I deleted my users table because it was too big of a responsibility, and all the
 
 Nevertheless, the caching is kept simple in this article, and I discourage the usage of such a naively implemented strategy. So, in [Part II](https://apolat2000.github.io/posts/i-deleted-my-users-table-part-2), you can read more about how I implemented a smarter cache that is cruel on memory but comforts time complexity.
 
-What do you think about my decision? As much as I would love to hear your thoughts, I am too lazy to implement commenting and discussion support in this blog, so please tell me your thoughts as a response to my [my tweet](https://twitter.com/acomathes/status/1656365976978354181).
+What do you think about my decision? As much as I would love to hear your thoughts, I am too lazy to implement commenting and discussion support in this blog, so please tell me your thoughts as a response to [my tweet](https://twitter.com/acomathes/status/1656365976978354181).
