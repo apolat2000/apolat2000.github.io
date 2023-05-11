@@ -1,11 +1,11 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
-  website: "https://astro-paper.pages.dev/",
+  website: "https://apolat2000.github.io/",
   author: "Ahmet Polat",
   desc: "Personal blog for apolat2000's excitement about tech, art and philosophy topics.",
   title: "apolat2000 Blog",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "og.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
