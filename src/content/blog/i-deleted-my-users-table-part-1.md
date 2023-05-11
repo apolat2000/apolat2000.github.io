@@ -276,6 +276,32 @@ async findById(id: string) {
 
 The existing passwords of users still require further configuration in Clerk. To read more on how you can keep users' current passwords after migration, read the [migration guide by Clerk](https://clerk.com/docs/deployments/overview).
 
+### Relations
+
+I trivially solved the relations problem by adding a `configId` key to the `public_metadata` object of the user object in Clerk. This way, I can still access the config object of a user by calling `user.configId` and then `this.configsRepository.findOne({ where: { id: user.configId } })`.
+
+### Full-text search
+
+I used [FlexSearch.js](https://github.com/nextapps-de/flexsearch) to implement full-text search on the user objects. I created a FlexSearch index in the constructor of `UserService` and added the user objects to it. Then I implemented a search method in the `UserService` as follows:
+
+```ts
+  async search(searchText: string) {
+    const doctorIds = await this.flexSearchIndex.search(searchText);
+    const res = [];
+    for (const doctorId of doctorIds) {
+      const doctor = await this.doctorsRepository.findOneBy({
+        id: doctorId,
+      });
+      const clerkUser = this.cachedClerkUsers.find(
+        ({ publicMetadata }) => publicMetadata.doctorId === doctorId,
+      );
+      clerkUser['doctor'] = doctor;
+      res.push(clerkUser);
+    }
+    return res;
+  }
+```
+
 After initializing a maintenance window, I followed these steps and introduced the changes in production.
 
 ## Conclusion

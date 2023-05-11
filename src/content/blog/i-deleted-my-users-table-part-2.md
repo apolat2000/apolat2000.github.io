@@ -12,7 +12,7 @@ tags:
   - psql
   - users
 ogImage: ""
-description: Be inspired by my reflection on whether I should manage the users of my application myself or use a third-party service.
+description: Learn how to efficiently cache users kept in a third-party authentication provider's database to stay resilient to network failures.
 ---
 
 ## TL;DR
@@ -23,7 +23,7 @@ In [Part I](https://apolat2000.github.io/posts/i-deleted-my-users-table-part-1),
 
 ## The Problem
 
-In the [previous article](<(https://apolat2000.github.io/posts/i-deleted-my-users-table-part-1)>), I explained how I migrated to a third-party authentication provider ([Clerk](https://clerk.com/)) and made Clerk's user database a part of my application's knowledge base. Yet, we cannot issue a network request whenever we want to access a user's information. We need to cache the users in our application in an efficient and scalable way. In this article, I will explain how I implemented this caching strategy.
+In the [previous article](<(https://apolat2000.github.io/posts/i-deleted-my-users-table-part-1)>), I explained how I migrated to a third-party authentication provider ([Clerk](https://clerk.com/)) and made Clerk's user database a part of my application's knowledge base. Yet, we cannot issue a network request whenever we want to access a user's information. We need to cache the users in our application in an efficient and scalable way. In this article, I explain a pretty nuanced approach, but it will offer us a *O(1)* query for finding a user by id, which is faster than JavaScript's built-in `.find(...)` with its time complexity of *O(n)*. I also explain the math behind the implementation and the tradeoffs that come with it.
 
 ## The Solution
 
